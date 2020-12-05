@@ -6,6 +6,10 @@ Brighten your day with a dad humor.
 
  _WARNING:  Laughter is not guaranteed, but eye rolls are likely._
 
+Works in all languages
+
+NOTE: this will automatically blacklist the official mycroft skill
+
 ## Examples 
 * "tell me a joke"
 * "say a joke"
