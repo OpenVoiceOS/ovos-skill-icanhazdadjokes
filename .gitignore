@@ -1,5 +1,5 @@
 settings.json
-
+.idea
 # python compiled files
 *.pyc
 __pycache__/

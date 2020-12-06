@@ -16,6 +16,9 @@ NOTE: this will automatically blacklist the official mycroft skill
 * "do you know any jokes"
 * "can you tell jokes"
 * "make me laugh"
+* "tell me a joke about dentists"
+* "do you know any robot jokes"
+
 
 ## Category
 **Entertainment**
