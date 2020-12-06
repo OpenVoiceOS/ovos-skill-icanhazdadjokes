@@ -16,6 +16,7 @@ from mycroft.messagebus.message import Message
 from mycroft.configuration import LocalConf, USER_CONFIG
 from mycroft.skills.core import MycroftSkill, intent_handler
 from google_trans_new import google_translator
+import pyjokes
 
 
 class JokingSkill(MycroftSkill):
@@ -63,8 +64,14 @@ class JokingSkill(MycroftSkill):
 
     @intent_handler("search_joke.intent")
     def handle_search_joke(self, message):
-        category = message.data["search"]
+        category = message.data["search"].lower()
         self.log.debug("joke search: " + category)
+
+        # special handling for chuck norris jokes
+        if "chuck norris" in category:
+            self.chuck_norris_joke()
+            return
+
         # search query should be in english
         tx_category = self.translate(category, "en", self.lang)
 
@@ -82,6 +89,11 @@ class JokingSkill(MycroftSkill):
             joke = random.choice(result.split("\n"))
             translated_utt = self.translate(joke)
             self.speak(translated_utt)
+
+    def chuck_norris_joke(self):
+        joke = pyjokes.get_joke(category="chuck")
+        translated_utt = self.translate(joke)
+        self.speak(translated_utt)
 
     def translate(self, utterance, lang_tgt=None, lang_src="en"):
         lang_tgt = lang_tgt or self.lang
