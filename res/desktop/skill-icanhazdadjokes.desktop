@@ -1,0 +1,10 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Name=Jokes Skill
+Exec=mycroft-gui-app --hideTextInput --skill=skill-icanhazdadjokes.jarbasskills.home
+Icon=dadjokes.png
+Categories=VoiceApp
+StartupNotify=false
+X-DBUS-StartupType=None
+X-KDE-StartupNotify=false

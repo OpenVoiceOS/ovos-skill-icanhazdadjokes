@@ -1,0 +1,27 @@
+{
+  "name": "Jokes",
+  "skillname": "skill-icanhazdadjokes",
+  "authorname": "JarbasSkills",
+  "foldername": "",
+  "url": "https://github.com/JarbasSkills/skill-icanhazdadjokes",
+  "branch": "master",
+  "desktopFile": false,
+  "warning": "",
+  "systemDeps": false,
+  "platforms": [
+    "arm",
+    "arm64",
+    "i386",
+    "x86_64",
+    "ia64"
+  ],
+  "examples": [
+    "tell me a joke",
+    "say a joke",
+    "do you know any jokes",
+    "can you tell jokes",
+    "make me laugh",
+    "tell me a joke about dentists",
+    "do you know any chuck norris jokes"
+  ]
+}
