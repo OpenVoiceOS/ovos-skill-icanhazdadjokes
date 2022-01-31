@@ -1,2 +1,2 @@
-google_trans_new
+ovos_plugin_manager
 pyjokes
