@@ -15,7 +15,7 @@ on:
       - "MANIFEST.in"
       - "readme.md"
       - "scripts/**"
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 jobs:
   unit_tests:
@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install System Dependencies
-        run: |
+        run: |-
           sudo apt-get update
           sudo apt install python3-dev
           python -m pip install build wheel
@@ -42,13 +42,13 @@ jobs:
         run: |
           pip install -r requirements-dev.txt
       - name: Install System Dependencies
-        run: |
+        run: |-
           sudo apt-get update
           sudo apt install libfann-dev
       - name: Install ovos dependencies
-        run: |
-          pip install ovos-plugin-manager ovos-core[skills_lgpl]>=0.0.5a28
-          echo "{"language": {"detection_module": "libretranslate_plug"}}" > ~/.config/mycroft/mycroft.conf
+        run: |-
+          pip install ovos-plugin-manager "ovos-core[skills_lgpl]>=0.0.5a28"
+          echo '{"language": {"detection_module": "libretranslate_plug"}}' > ~/.config/mycroft/mycroft.conf
       - name: Run unittests
         run: |
           pytest --cov=. --cov-report xml tests
