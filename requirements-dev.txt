@@ -1,0 +1,3 @@
+pytest
+pytest-cov
+neon-lang-plugin-libretranslate~=0.2

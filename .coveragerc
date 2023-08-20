@@ -1,0 +1,6 @@
+[run]
+
+omit = 
+    tests/*
+    version.py
+    setup.py
