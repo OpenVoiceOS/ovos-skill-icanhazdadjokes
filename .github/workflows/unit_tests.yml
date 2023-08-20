@@ -41,6 +41,14 @@ jobs:
       - name: Install test dependencies
         run: |
           pip install -r requirements-dev.txt
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles('**/requirements-dev.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-${{ matrix.python-version }}-
+            ${{ runner.os }}-pip-
       - name: Install System Dependencies
         run: |-
           sudo apt-get update
@@ -48,6 +56,7 @@ jobs:
       - name: Install ovos dependencies
         run: |-
           pip install ovos-plugin-manager "ovos-core[skills_lgpl]>=0.0.5a28"
+          mkdir -p ~/.config/mycroft/
           echo '{"language": {"detection_module": "libretranslate_plug"}}' > ~/.config/mycroft/mycroft.conf
       - name: Run unittests
         run: |
