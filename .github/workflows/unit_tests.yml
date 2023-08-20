@@ -15,17 +15,6 @@ on:
       - "MANIFEST.in"
       - "readme.md"
       - "scripts/**"
-    paths-ignore:
-      - "version.py"
-      - "requirements.txt"
-      - "examples/**"
-      - ".github/**"
-      - ".gitignore"
-      - "LICENSE"
-      - "CHANGELOG.md"
-      - "MANIFEST.in"
-      - "readme.md"
-      - "scripts/**"
   workflow_dispatch:
 
 jobs:
