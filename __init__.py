@@ -27,16 +27,10 @@ class JokingSkill(OVOSSkill):
         # TODO config from settings
         self.translator = OVOSLangTranslationFactory.create()
 
-    @intent_handler("joke.intent")
-    def handle_joke(self, message: Message) -> None:
-        joke = self._fix_encoding(self.get_generic_joke())
-        translated_utt = self.translate(joke)
-        self.speak(translated_utt)
-
     def get_generic_joke(self) -> Optional[str]:
         joke = requests.get("https://icanhazdadjoke.com/", headers={"Accept": "text/plain"}, timeout=10)
         joke.raise_for_status()
-        return joke.text
+        return self._fix_encoding(joke.text)
 
     def _fix_encoding(self, string: str) -> str:
         replacements = {
@@ -65,6 +59,11 @@ class JokingSkill(OVOSSkill):
             self.log.warning("Please report this issue so we can fix it! PRs welcome")
         return string
 
+    @intent_handler("joke.intent")
+    def handle_joke(self, message: Message) -> None:
+        joke = self.get_generic_joke()
+        self._speak_tx(joke)
+
     @intent_handler("search_joke.intent")
     def handle_search_joke(self, message: Message) -> None:
         category = message.data["search"].lower()
@@ -75,14 +74,17 @@ class JokingSkill(OVOSSkill):
             self.chuck_norris_joke()
             return
 
-        # search query should be in english
-        tx_category = self.translate(utterance=category, lang_tgt="en", lang_src=self.lang)
+        # search query should be in english, translate if needed
+        is_english = self.lang.split("-")[0] == "en"
+        if not is_english:
+            tx_category = self.translate(utterance=category, lang_tgt="en", lang_src=self.lang)
+            # TODO make singular, https://github.com/MycroftAI/lingua-franca/pull/36
+            if tx_category.endswith("s"):
+                tx_category = tx_category[: len(tx_category) - 1]
+            url = "https://icanhazdadjoke.com/search?term=" + tx_category
+        else:
+            url = "https://icanhazdadjoke.com/search?term=" + category
 
-        # TODO make singular, https://github.com/MycroftAI/lingua-franca/pull/36
-        if tx_category.endswith("s"):
-            tx_category = tx_category[: len(tx_category) - 1]
-
-        url = "https://icanhazdadjoke.com/search?term=" + tx_category
         headers = {"Accept": "text/plain"}
         result = requests.get(url, headers=headers, timeout=10).text.strip()
 
@@ -90,13 +92,20 @@ class JokingSkill(OVOSSkill):
             self.speak_dialog("no_joke", {"search": category})
         else:
             joke = random.choice(result.split("\n"))
-            translated_utt = self.translate(joke)
-            self.speak(translated_utt)
+            self._speak_tx(joke)
 
     def chuck_norris_joke(self):
         joke = pyjokes.get_joke(category="chuck")
-        translated_utt = self.translate(joke)
-        self.speak(translated_utt)
+        self._speak_tx(joke)
+
+    def _speak_tx(self, joke):
+        # helper to translate jokes to non-english on speak
+        is_english = self.lang.split("-")[0] == "en"
+        if not is_english:
+            translated_utt = self.translate(joke)
+            self.speak(translated_utt)
+        else:
+            self.speak(joke)
 
     def translate(self, utterance, lang_tgt=None, lang_src="en-us"):
         lang_tgt = lang_tgt or self.lang
