@@ -15,13 +15,13 @@ Works in all languages
 NOTE: this will automatically blacklist the official mycroft skill
 
 ## Examples 
-* "tell me a joke"
-* "say a joke"
-* "do you know any jokes"
-* "can you tell jokes"
-* "make me laugh"
-* "tell me a joke about dentists"
-* "do you know any chuck norris jokes"
+* "Tell me a joke."
+* "Say a joke."
+* "Do you know any jokes?"
+* "Can you tell jokes?"
+* "Make me laugh."
+* "Tell me a joke about dentists."
+* "Do you know any Chuck Norris jokes?"
 
 # Platform support
 
