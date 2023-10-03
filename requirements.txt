@@ -1,3 +1,4 @@
 ovos_plugin_manager
 ovos_workshop
+ovos_utils
 pyjokes
