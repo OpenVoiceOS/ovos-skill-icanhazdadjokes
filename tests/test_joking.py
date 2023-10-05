@@ -84,30 +84,25 @@ class TestSkill(unittest.TestCase):
                 result = self.skill._fix_encoding(broken)
                 self.assertEqual(result, expected, f"Expected '{expected}', but got '{result}'")
 
-    def test_handle_joke(self):
+    @patch("requests.get", return_value=Mock(text="joke\r\n", raise_for_status=Mock()))
+    def test_handle_joke(self, mock_requests):
         # Arrange
-        get_joke = self.skill.get_generic_joke = Mock(return_value="joke\r\n")
+        mock_requests.raise_for_status.return_value = None
         fix = self.skill._fix_encoding = Mock(return_value="joke")
-        translate = self.skill.translate = Mock(return_value="blague")
-        self.skill.speak = Mock()
         # Act
         self.skill.handle_joke(
             Message(
                 "skill-icanhazdadjokes.jarbasskills:joke.intent",
                 data={
-                    "data": {
-                        "utterances": ["tell me a joke", "tell me joke"],
-                        "lang": "en-us",
-                        "utterance": "tell me a joke",
-                    }
+                    "utterances": ["tell me a joke", "tell me joke"],
+                    "lang": "fr-fr",
+                    "utterance": "tell me a joke",
                 },
             )
         )
         # Assert
-        get_joke.assert_called_once()
-        fix.assert_called_once_with(get_joke.return_value)
-        translate.assert_called_once_with(fix.return_value)
-        self.skill.speak.assert_called_once_with(translate.return_value)
+        fix.assert_called_once_with("joke\r\n")
+        self.skill.speak.assert_called_once_with("blague")
 
     @patch("requests.get")
     def test_get_generic_joke(self, mock_get):
