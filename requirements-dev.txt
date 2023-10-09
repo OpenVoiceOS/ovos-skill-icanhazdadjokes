@@ -1,3 +1,4 @@
 pytest
 pytest-cov
-neon-lang-plugin-libretranslate~=0.2
+ovos-translate-server-plugin
+tox
