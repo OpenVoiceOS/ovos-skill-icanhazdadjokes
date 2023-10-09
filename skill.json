@@ -18,7 +18,7 @@
     "systemDeps": false,
     "requirements": {
         "python": [
-            "ovos-translate-server-plugin",
+            "ovos-translate-server-plugin>=0.0.0a5",
             "ovos_plugin_manager",
             "ovos_utils",
             "ovos_workshop",
