@@ -2,4 +2,4 @@ ovos_plugin_manager
 ovos_workshop
 ovos_utils
 pyjokes
-ovos-translate-server-plugin
+ovos-translate-server-plugin>=0.0.0a5
