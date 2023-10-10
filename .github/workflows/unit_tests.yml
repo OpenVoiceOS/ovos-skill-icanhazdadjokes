@@ -25,18 +25,14 @@ jobs:
         python-version: [3.7, 3.8, 3.9, "3.10", "3.11"]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up python ${{ matrix.python-version }}
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install System Dependencies
-        run: |-
-          sudo apt-get update
-          sudo apt install python3-dev
-          python -m pip install build wheel
       - name: Install core repo
         run: |
+          pip install build wheel
           pip install .
       - name: Install test dependencies
         run: |
@@ -49,17 +45,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-${{ matrix.python-version }}-
             ${{ runner.os }}-pip-
-      - name: Install System Dependencies
-        run: |-
-          sudo apt-get update
-          sudo apt install libfann-dev
-      - name: Install ovos dependencies
-        run: |-
-          pip install ovos-plugin-manager "ovos-core[skills_lgpl]>=0.0.5a28"
-          mkdir -p ~/.config/mycroft/
-          echo '{"language": {"detection_module": "libretranslate_plug"}}' > ~/.config/mycroft/mycroft.conf
       - name: Run unittests
-        run: |
+        run: |-
           pytest --cov=. --cov-report xml tests
       - name: Upload coverage
         env:

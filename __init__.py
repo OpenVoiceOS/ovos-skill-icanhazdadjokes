@@ -22,8 +22,8 @@ from ovos_workshop.skills import OVOSSkill
 
 
 class JokingSkill(OVOSSkill):
-    def __init__(self):
-        super(JokingSkill, self).__init__(name="JokingSkill")
+    def __init__(self, *args, **kwargs):
+        super(JokingSkill, self).__init__(*args, **kwargs)
         # TODO config from settings
         self.translator = OVOSLangTranslationFactory.create()
 
@@ -39,17 +39,17 @@ class JokingSkill(OVOSSkill):
             "\r": " ",
             "\n": " ",
             "â\x80\x99": "'",  # right single quotation mark
-            'â\x80\x98': "'",  # left single quotation mark
+            "â\x80\x98": "'",  # left single quotation mark
             "â\x80\x93": "–",  # en dash
-            'â\x80\x94': '—',  # em dash
+            "â\x80\x94": "—",  # em dash
             "â\x80¦": "…",  # ellipsis
-            'â\x82¬': '€',     # euro sign
-            'â\x80\x8b': '‐',  # hyphen (non-breaking)
-            'Â\xa0': ' ',      # non-breaking space
-            'â\x80\x9e': '"',  # double low-9 quotation mark
-            'â\x80\x9a': "'",  # single low-9 quotation mark
-            'â\x80\xba': '›',  # single right-pointing angle quotation mark
-            'â\x80\xb9': '‹'   # single left-pointing angle quotation mark
+            "â\x82¬": "€",  # euro sign
+            "â\x80\x8b": "‐",  # hyphen (non-breaking)
+            "Â\xa0": " ",  # non-breaking space
+            "â\x80\x9e": '"',  # double low-9 quotation mark
+            "â\x80\x9a": "'",  # single low-9 quotation mark
+            "â\x80\xba": "›",  # single right-pointing angle quotation mark
+            "â\x80\xb9": "‹",  # single left-pointing angle quotation mark
         }
 
         for old, new in replacements.items():

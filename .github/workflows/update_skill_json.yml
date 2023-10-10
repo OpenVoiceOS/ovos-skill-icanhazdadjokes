@@ -6,4 +6,6 @@ on:
 
 jobs:
   update_skill_json:
+    permissions:
+      contents: write
     uses: neongeckocom/.github/.github/workflows/skill_update_json_spec.yml@master

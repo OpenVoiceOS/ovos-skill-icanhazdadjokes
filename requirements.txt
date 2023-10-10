@@ -1,4 +1,7 @@
 ovos_plugin_manager
 ovos_workshop
+ovos_utils
+ovos_classifiers
 pyjokes
-ovos-translate-server-plugin
+ovos-translate-server-plugin>=0.0.0a5
+neon-lang-plugin-libretranslate
