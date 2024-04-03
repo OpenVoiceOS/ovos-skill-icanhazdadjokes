@@ -3,4 +3,4 @@ ovos_workshop~=0.0.15
 ovos_utils~=0.0,>=0.0.38
 ovos_classifiers
 pyjokes~=0.6
-ovos-translate-server-plugin~=0.0.1
+ovos-translate-server-plugin~=0.0.0
