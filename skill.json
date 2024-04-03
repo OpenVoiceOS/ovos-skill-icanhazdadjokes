@@ -18,7 +18,6 @@
     "systemDeps": false,
     "requirements": {
         "python": [
-            "neon-lang-plugin-libretranslate~=0.2",
             "ovos-translate-server-plugin~=0.0.1",
             "ovos_classifiers",
             "ovos_plugin_manager~=0.0.25",
