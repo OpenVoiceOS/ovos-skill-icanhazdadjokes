@@ -1,7 +1,6 @@
-ovos_plugin_manager
-ovos_workshop
-ovos_utils
+ovos_plugin_manager~=0.0.25
+ovos_workshop~=0.0.15
+ovos_utils~=0.0,>=0.0.38
 ovos_classifiers
-pyjokes
-ovos-translate-server-plugin>=0.0.0a5
-neon-lang-plugin-libretranslate
+pyjokes~=0.6
+ovos-translate-server-plugin~=0.0.1
