@@ -18,13 +18,13 @@
     "systemDeps": false,
     "requirements": {
         "python": [
-            "neon-lang-plugin-libretranslate",
-            "ovos-translate-server-plugin>=0.0.0a5",
+            "neon-lang-plugin-libretranslate~=0.2",
+            "ovos-translate-server-plugin~=0.0.1",
             "ovos_classifiers",
-            "ovos_plugin_manager",
-            "ovos_utils",
-            "ovos_workshop",
-            "pyjokes"
+            "ovos_plugin_manager~=0.0.25",
+            "ovos_utils~=0.0,>=0.0.38",
+            "ovos_workshop~=0.0.15",
+            "pyjokes~=0.6"
         ],
         "system": {},
         "skill": []
