@@ -1,0 +1,19 @@
+{
+    "search_joke.intent": [
+        "diz-me uma anedota sobre {search}",
+        "diz-me uma piada sobre {search}",
+        "conta uma anedota sobre {search}",
+        "conta uma piada sobre {search}",
+        "sabes alguma anedota sobre {search}",
+        "sabes alguma piada sobre {search}"
+    ],
+    "joke.intent": [
+        "diz-me uma anedota",
+        "diz-me umma piada",
+        "conta uma anedota",
+        "conta uma piada",
+        "sabes alguma anedota",
+        "sabes alguma piada",
+        "faz-me rir"
+    ]
+}
