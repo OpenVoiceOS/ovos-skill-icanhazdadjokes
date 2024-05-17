@@ -1,7 +1,4 @@
-diz-me uma anedota
-diz-me umma piada
-conta uma anedota
-conta uma piada
-sabes alguma anedota
-sabes alguma piada
+(conta|diz|conta-me|diz-me) uma (piada|anedota)
 faz-me rir
+sabes alguma (piada|anedota)
+sabes contar (piadas|anedotas)

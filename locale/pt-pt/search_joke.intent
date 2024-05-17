@@ -1,6 +1,3 @@
-diz-me uma anedota sobre {search}
-diz-me uma piada sobre {search}
-conta uma anedota sobre {search}
-conta uma piada sobre {search}
-sabes alguma anedota sobre {search}
-sabes alguma piada sobre {search}
+(conta|conta-me|diz-me) uma (piada|anedota) sobre {search}
+(piada|anedota) sobre {search}
+sabes alguma (piada|anedota) sobre {search}

@@ -1,9 +1,9 @@
-tell me a {search} joke
-say a {search} joke
-do you know any {search} jokes
-can you tell {search} jokes
-joke about {search}
-tell me a joke about {search}
-say a joke about {search}
-do you know any jokes about {search}
 can you tell jokes about {search}
+can you tell {search} jokes
+do you know any jokes about {search}
+do you know any {search} jokes
+joke about {search}
+say a joke about {search}
+say a {search} joke
+tell me a joke about {search}
+tell me a {search} joke
