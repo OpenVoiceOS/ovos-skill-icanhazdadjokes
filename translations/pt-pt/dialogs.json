@@ -1,6 +1,5 @@
 {
-    "no_joke.dialog": [
-        "n\u00e3o encontrei nenhuma piada sobre {search}",
-        "n\u00e3o encontrei nenhuma anedota sobre {search}"
-    ]
+  "no_joke.dialog": [
+    "não encontrei nenhuma (anedota|piada) sobre {search}"
+  ]
 }
