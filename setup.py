@@ -70,6 +70,7 @@ setup(
     name=PYPI_NAME,
     version=get_version(),
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url=URL,
     author=SKILL_AUTHOR,
     description='OVOS jokes skill plugin',
