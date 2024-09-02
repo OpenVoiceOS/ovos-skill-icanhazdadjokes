@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/tree/HEAD)
+## [V0.1.0a2](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/tree/V0.1.0a2) (2024-09-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/compare/v0.1.0...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/compare/v0.1.0...V0.1.0a2)
 
 **Fixed bugs:**
 
