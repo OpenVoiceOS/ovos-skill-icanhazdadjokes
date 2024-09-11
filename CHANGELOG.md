@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- fix\(semver\):pin stable versions [\#15](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/15) ([JarbasAl](https://github.com/JarbasAl))
 - chore:rm\_unused file [\#14](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/14) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [V0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/V0.2.0a1) (2024-09-02)
