@@ -1,37 +1,16 @@
 # Changelog
 
-## [V0.1.0](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/tree/V0.1.0) (2024-09-02)
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/compare/V0.1.0a2...V0.1.0)
-
-## [V0.1.0a2](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/tree/V0.1.0a2) (2024-09-02)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/compare/v0.1.0...V0.1.0a2)
-
-**Fixed bugs:**
-
-- Clean Returned Strings [\#2](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/issues/2)
-- better tx [\#6](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/6) ([JarbasAl](https://github.com/JarbasAl))
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/V0.2.0a1...HEAD)
 
 **Merged pull requests:**
 
-- pt-pt/translate [\#13](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/13) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Fix invalid dependency spec from \#10 [\#11](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/11) ([NeonDaniel](https://github.com/NeonDaniel))
-- Add dependency version specs [\#10](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/10) ([NeonDaniel](https://github.com/NeonDaniel))
-- fix: add skill.json, resolve failing tests [\#9](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/9) ([mikejgray](https://github.com/mikejgray))
-- Make README.md examples fit typical style [\#8](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/8) ([strugee](https://github.com/strugee))
-- Update setup.py [\#7](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/7) ([JarbasAl](https://github.com/JarbasAl))
-- feat: modernize, handle encoding issues, and add tests [\#5](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/5) ([mikejgray](https://github.com/mikejgray))
-- Setup.py [\#4](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/4) ([builderjer](https://github.com/builderjer))
-- added setup.py [\#3](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/3) ([builderjer](https://github.com/builderjer))
+- chore:rm\_unused file [\#14](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/14) ([JarbasAl](https://github.com/JarbasAl))
 
-## [v0.1.0](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/tree/v0.1.0) (2020-12-17)
+## [V0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/V0.2.0a1) (2024-09-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/compare/abc4310651e8ee6115b81498349afa760be0aac1...v0.1.0)
-
-**Merged pull requests:**
-
-- Add ca-es locale [\#1](https://github.com/OpenVoiceOS/skill-ovos-icanhazdadjokes/pull/1) ([jmontane](https://github.com/jmontane))
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/V0.1.0...V0.2.0a1)
 
 
 
