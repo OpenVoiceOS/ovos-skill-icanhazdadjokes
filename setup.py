@@ -27,8 +27,12 @@ def find_resource_files():
                                   '*'))
     return package_data
 
-with open("README.md", "r") as f:
+
+BASEDIR = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(BASEDIR, "README.md"), "r") as f:
     long_description = f.read()
+
 
 def get_version():
     """ Find the version of this skill"""
