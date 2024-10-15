@@ -1,18 +1,20 @@
 # Changelog
 
-## [0.2.3a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.3a1) (2024-09-11)
+## [0.2.4a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.4a2) (2024-10-15)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/V0.2.0a1...0.2.3a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.4a1...0.2.4a2)
 
 **Merged pull requests:**
 
-- fix:setup\_readme\_abs\_path [\#16](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/16) ([JarbasAl](https://github.com/JarbasAl))
-- fix\(semver\):pin stable versions [\#15](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/15) ([JarbasAl](https://github.com/JarbasAl))
-- chore:rm\_unused file [\#14](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/14) ([JarbasAl](https://github.com/JarbasAl))
+- fix:update\_requirements [\#20](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/20) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/V0.2.0a1) (2024-09-02)
+## [0.2.4a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.4a1) (2024-10-07)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/V0.1.0...V0.2.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.3...0.2.4a1)
+
+**Merged pull requests:**
+
+- Add Catalan translation [\#18](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/18) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
