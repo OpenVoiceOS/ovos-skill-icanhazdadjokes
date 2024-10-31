@@ -1,20 +1,12 @@
 # Changelog
 
-## [0.2.4a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.4a2) (2024-10-15)
+## [0.2.5a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.5a1) (2024-10-31)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.4a1...0.2.4a2)
-
-**Merged pull requests:**
-
-- fix:update\_requirements [\#20](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/20) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.2.4a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.4a1) (2024-10-07)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.3...0.2.4a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.4...0.2.5a1)
 
 **Merged pull requests:**
 
-- Add Catalan translation [\#18](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/18) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- fix:allow workshop 3.0.0 [\#22](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/22) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
