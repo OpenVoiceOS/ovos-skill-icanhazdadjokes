@@ -1,0 +1,20 @@
+{
+  "search_joke.intent": [
+    "fortæl mig en {search}-joke",
+    "sig en {search} joke",
+    null,
+    "kan du fortælle {search} vittigheder",
+    "joke om {search}",
+    null,
+    null,
+    null,
+    null
+  ],
+  "joke.intent": [
+    null,
+    "lav en joke",
+    null,
+    null,
+    null
+  ]
+}
