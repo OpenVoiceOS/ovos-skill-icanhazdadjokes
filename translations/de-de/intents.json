@@ -1,0 +1,20 @@
+{
+  "search_joke.intent": [
+    "erzähl mir einen {search} Witz",
+    "erzähl einen {search} Witz\nMache einen {search} Witz",
+    "kennst du irgendwelche {search} Witze\nkennst du einen {search} Witz",
+    "kannst du {search} Witze erzählen",
+    "Mache einen Witz über {search}",
+    "erzähl mir einen Witz über {search}",
+    "erzähle einen Witz über {search}",
+    "kennst du irgendwelche Witze über {search}",
+    "kannst du Witze über {search} erzählen"
+  ],
+  "joke.intent": [
+    "Erzähl mir einen Witz",
+    "Erzähle einen Witz",
+    "kennst du irgendwelche Witze",
+    "kannst du Witze erzählen",
+    "Bring mich zum Lachen"
+  ]
+}
