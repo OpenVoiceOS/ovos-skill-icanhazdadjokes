@@ -2,19 +2,19 @@
   "search_joke.intent": [
     "fortæl mig en {search}-joke",
     "sig en {search} joke",
-    null,
+    "kender du nogle {search} vittigheder",
     "kan du fortælle {search} vittigheder",
     "joke om {search}",
-    null,
-    null,
-    null,
-    null
+    "fortæl mig en vittighed om {search}",
+    "sige en joke om {search}",
+    "kender du nogle vittigheder om {search}",
+    "kan du fortælle vittigheder om {search}"
   ],
   "joke.intent": [
-    null,
+    "fortæl mig en vittighed",
     "lav en joke",
-    null,
-    null,
-    null
+    "kender du nogle vittigheder",
+    "kan du fortælle vittigheder",
+    "få mig til at grine"
   ]
 }
