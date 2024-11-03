@@ -1,0 +1,20 @@
+{
+  "search_joke.intent": [
+    "raconte-moi une blague sur {search}",
+    "dis une blague sur {search}",
+    "Connais-tu des blagues sur {search}",
+    "peux-tu raconter des blagues sur {search}",
+    "blague sur {search}",
+    "raconte-moi une blague sur {search}",
+    "dis une blague sur {search}",
+    "Connais-tu des blagues sur {search}",
+    "peux-tu raconter des blagues sur {search}"
+  ],
+  "joke.intent": [
+    "raconte-moi une blague",
+    "dit une blague",
+    "connais-tu des blagues ?",
+    "peux-tu raconter des blagues",
+    "fais moi rire"
+  ]
+}
