@@ -1,6 +1,6 @@
 {
     "title": "Jokes",
-    "description": "Brighten your day with dad humor.  _WARNING:  Laughter is not guaranteed, but eye rolls are likely._ Works in all languages NOTE: this will automatically blacklist the official mycroft skill",
+    "description": "Brighten your day with dad humor. Laughter is not guaranteed, but eye rolls are likely.",
     "examples": [
         "Tell me a joke.",
         "Say a joke.",
