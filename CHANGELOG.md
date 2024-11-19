@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.2.8a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.8a1) (2024-11-17)
+## [0.2.9a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.9a1) (2024-11-19)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.7...0.2.8a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.8...0.2.9a1)
 
 **Merged pull requests:**
 
-- fix: skilljson [\#27](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/27) ([JarbasAl](https://github.com/JarbasAl))
+- fix:allow workshop 3.0.0 [\#29](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/29) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
