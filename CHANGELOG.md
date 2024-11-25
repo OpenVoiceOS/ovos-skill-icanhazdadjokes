@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.2.10a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.10a1) (2024-11-23)
+## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.11a1) (2024-11-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.9...0.2.10a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.10...0.2.11a1)
 
 **Merged pull requests:**
 
-- Add Catalan translation [\#31](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/31) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- da-dk/translate [\#33](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/33) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
