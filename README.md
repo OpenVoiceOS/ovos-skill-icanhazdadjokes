@@ -32,3 +32,4 @@ Brighten your day with dad humor.
 - Jokes from [The Internet Chuck Norris DB (ICNDB)](http://www.icndb.com/) provided under CC BY-SA 3.0
 - programmer jokes from [stackoverflow](http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke?page=4&tab=votes#tab-top) provided under CC BY-SA 3.0
 - [Blagues-API](https://github.com/Blagues-API/blagues-api/) (french)
+- [Puntuguese dataset](https://github.com/Superar/Puntuguese) (portuguese puns)
