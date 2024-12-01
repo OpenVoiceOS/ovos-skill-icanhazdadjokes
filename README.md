@@ -1,14 +1,9 @@
-# <img src='.dadjokes.png' card_color='#22a7f0' width='50' height='50' style='vertical-align:bottom'/> Jokes
-Let OVOS brighten your day with a little humor from [icanhazdadjoke](icanhazdadjoke.com)
-
-Chuck Norris jokes powered by [pyjokes](https://github.com/pyjokes/pyjokes)
-
+# <img src='./dadjokes.png' card_color='#22a7f0' width='50' height='50' style='vertical-align:bottom'/> Jokes
+Let OVOS brighten your day with a little humor 
 ## About 
 Brighten your day with dad humor.  
 
  _WARNING:  Laughter is not guaranteed, but eye rolls are likely._
-
-> NOTE: jokes will be automatically translated if language is not english
 
 
 ## Examples 
@@ -29,3 +24,11 @@ Brighten your day with dad humor.
 #humor
 #humour
 #funny
+
+## Credits
+- [icanhazdadjoke](icanhazdadjoke.com) scraped by [ShivamJoker](https://gist.github.com/ShivamJoker/2ca8daacab7a4fe0615f535cd9d7fd78)
+- [mshwery/dad-jokes-api](https://github.com/mshwery/dad-jokes-api)
+- [pyjokes](https://github.com/pyjokes/pyjokes)
+- Jokes from [The Internet Chuck Norris DB (ICNDB)](http://www.icndb.com/) provided under CC BY-SA 3.0
+- programmer jokes from [stackoverflow](http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke?page=4&tab=votes#tab-top) provided under CC BY-SA 3.0
+- [Blagues-API](https://github.com/Blagues-API/blagues-api/) (french)
