@@ -1,20 +1,13 @@
 {
-  "search_joke.intent": [
-    "(conta|conta-me|diz-me) uma (piada|anedota) sobre {search}",
-    "[UNUSED]",
-    "sabes alguma (piada|anedota) sobre {search}",
-    "[UNUSED]",
-    "(piada|anedota) sobre {search}",
-    "[UNUSED]",
-    "[UNUSED]",
-    "[UNUSED]",
-    "[UNUSED]"
-  ],
-  "joke.intent": [
-    "(conta|diz|conta-me|diz-me) uma (piada|anedota)",
-    "[UNUSED]",
-    "sabes alguma (piada|anedota)",
-    "sabes contar (piadas|anedotas)",
-    "faz-me rir"
-  ]
+    "search_joke.intent": [
+        "(conta|conta-me|diz-me) uma (piada|anedota) sobre {search}",
+        "(piada|anedota) sobre {search}",
+        "sabes alguma (piada|anedota) sobre {search}"
+    ],
+    "joke.intent": [
+        "(conta|diz|conta-me|diz-me) uma (piada|anedota)",
+        "faz-me rir",
+        "sabes alguma (piada|anedota)",
+        "sabes contar (piadas|anedotas)"
+    ]
 }

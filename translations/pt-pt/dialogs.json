@@ -1,5 +1,5 @@
 {
-  "no_joke.dialog": [
-    "não encontrei nenhuma (anedota|piada) sobre {search}"
-  ]
+    "no_joke.dialog": [
+        "não encontrei nenhuma (anedota|piada) sobre {search}"
+    ]
 }

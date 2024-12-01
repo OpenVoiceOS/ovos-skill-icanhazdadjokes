@@ -41,13 +41,13 @@ for lang in os.listdir(locale):
     os.makedirs(f"{tx}/{lang.lower()}", exist_ok=True)
     if intents:
         with open(f"{tx}/{lang.lower()}/intents.json", "w") as f:
-            json.dump(intents, f, indent=4)
+            json.dump(intents, f, indent=4, ensure_ascii=False)
     if dialogs:
         with open(f"{tx}/{lang.lower()}/dialogs.json", "w") as f:
-            json.dump(dialogs, f, indent=4)
+            json.dump(dialogs, f, indent=4, ensure_ascii=False)
     if vocs:
         with open(f"{tx}/{lang.lower()}/vocabs.json", "w") as f:
-            json.dump(vocs, f, indent=4)
+            json.dump(vocs, f, indent=4, ensure_ascii=False)
     if regexes:
         with open(f"{tx}/{lang.lower()}/regexes.json", "w") as f:
-            json.dump(regexes, f, indent=4)
+            json.dump(regexes, f, indent=4, ensure_ascii=False)

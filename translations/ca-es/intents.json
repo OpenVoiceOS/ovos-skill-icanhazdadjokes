@@ -1,20 +1,20 @@
 {
-  "search_joke.intent": [
-    "(diga|digue|conta|explica)'m (alguna|una) broma (de|sobre) {search}",
-    "(diga|digue|conta|explica)'m (algun|un) acudit (de|sobre) {search}",
-    "saps (cap|alguna) broma (de|sobre) {search}",
-    "saps (cap|algun) acudit (de|sobre) {search}",
-    "em pots (dir|contar|explicar) (bromes|acudits) (de|sobre) {search}",
-    "pots (dir|contar|explicar)-me (bromes|acudits) (de|sobre) {search}",
-    "(broma|acudit) (de|sobre) {search}",
-    "(una|alguna) broma (de|sobre) {search}",
-    "(un|algun) acudit (de|sobre) {search}"
-  ],
-  "joke.intent": [
-    "(conta|diga|digue|explica)'m (alguna|una) broma",
-    "(conta|diga|digue|explica) (alguna|una) broma",
-    "(conta|diga|digue|explica)'m (algun|un) acudit",
-    "(conta|diga|digue|explica) (algun|un) acudit",
-    "digues-me (alguna|una) broma"
-  ]
+    "search_joke.intent": [
+        "(broma|acudit) (de|sobre) {search}",
+        "(diga|digue|conta|explica)'m (alguna|una) broma (de|sobre) {search}",
+        "(diga|digue|conta|explica)'m (algun|un) acudit (de|sobre) {search}",
+        "(una|alguna) broma (de|sobre) {search}",
+        "(un|algun) acudit (de|sobre) {search}",
+        "em pots (dir|contar|explicar) (bromes|acudits) (de|sobre) {search}",
+        "pots (dir|contar|explicar)-me (bromes|acudits) (de|sobre) {search}",
+        "saps (cap|algun) acudit (de|sobre) {search}",
+        "saps (cap|alguna) broma (de|sobre) {search}"
+    ],
+    "joke.intent": [
+        "(conta|diga|digue|explica) (alguna|una) broma",
+        "(conta|diga|digue|explica) (algun|un) acudit",
+        "(conta|diga|digue|explica)'m (alguna|una) broma",
+        "(conta|diga|digue|explica)'m (algun|un) acudit",
+        "digues-me (alguna|una) broma"
+    ]
 }
