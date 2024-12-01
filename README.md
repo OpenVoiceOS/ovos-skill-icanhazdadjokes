@@ -26,7 +26,7 @@ Brighten your day with dad humor.
 #funny
 
 ## Credits
-- [icanhazdadjoke](icanhazdadjoke.com) scraped by [ShivamJoker](https://gist.github.com/ShivamJoker/2ca8daacab7a4fe0615f535cd9d7fd78)
+- [icanhazdadjoke](https://icanhazdadjoke.com) scraped by [ShivamJoker](https://gist.github.com/ShivamJoker/2ca8daacab7a4fe0615f535cd9d7fd78)
 - [mshwery/dad-jokes-api](https://github.com/mshwery/dad-jokes-api)
 - [pyjokes](https://github.com/pyjokes/pyjokes)
 - Jokes from [The Internet Chuck Norris DB (ICNDB)](http://www.icndb.com/) provided under CC BY-SA 3.0
