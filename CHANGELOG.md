@@ -1,12 +1,17 @@
 # Changelog
 
-## [0.2.12a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.12a1) (2024-11-30)
+## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.0a1) (2024-12-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.11...0.2.12a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.12...0.3.0a1)
+
+**Implemented enhancements:**
+
+- dont require internet [\#36](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/issues/36)
+- add french jokes [\#35](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/issues/35)
 
 **Merged pull requests:**
 
-- de-de/translate [\#37](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/37) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- feat: offline jokes [\#39](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/39) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
