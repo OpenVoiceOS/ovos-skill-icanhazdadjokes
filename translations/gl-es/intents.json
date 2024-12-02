@@ -1,0 +1,20 @@
+{
+    "search_joke.intent": [
+        "sabes chistes sobre {search}",
+        "sabes contar chistes sobre {search}",
+        "sabes algún chiste sobre {search}",
+        "sabes algún chiste de {search}",
+        "di un chiste de {search}",
+        "conta un chiste sobre {search}",
+        "conta un chiste de {search}",
+        "cóntame un chiste sobre {search}",
+        "cóntame un chiste de {search}"
+    ],
+    "joke.intent": [
+        "sabes contar chistes",
+        "sabes algún chiste",
+        "faime rir",
+        "di un chiste",
+        "cóntame un chiste"
+    ]
+}
