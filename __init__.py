@@ -21,7 +21,13 @@ class JokingSkill(OVOSSkill):
 
     @intent_handler("joke.intent")
     def handle_joke(self, message: Optional[Message] = None) -> None:
-        self.speak_dialog("general_jokes")
+        # TODO - refactor this once lang support is more uniform
+        if self.lang.startswith("pt"):
+            self.speak_dialog("puns")
+        elif self.lang.split("-")[0] in ["cs", "es", "eu", "gl", "hu", "it", "pl", "sv"]:
+            self.speak_dialog("dev_jokes")
+        else:
+            self.speak_dialog("general_jokes")
 
     @intent_handler("search_joke.intent")
     def handle_search_joke(self, message: Message) -> None:
@@ -29,12 +35,14 @@ class JokingSkill(OVOSSkill):
         self.log.debug("joke search: %s", category)
 
         # TODO self.voc_match more joke types
-        # special handling for chuck norris jokes
+        # TODO allow blacklisting some categories in settings.json (kid friendly setting by default)
         if self.voc_match(voc_filename="ChuckNorris", utt=category, lang=self.lang):
             self.speak_dialog("chuck_norris_jokes")
         elif self.voc_match(voc_filename="Dad", utt=category, lang=self.lang):
             self.speak_dialog("dad_jokes")
         elif self.voc_match(voc_filename="Programmer", utt=category, lang=self.lang):
             self.speak_dialog("dev_jokes")
+        elif self.voc_match(voc_filename="Pun", utt=category, lang=self.lang):
+            self.speak_dialog("puns")
         else:
             self.speak_dialog("no_joke", {"search": category})

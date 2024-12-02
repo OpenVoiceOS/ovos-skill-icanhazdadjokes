@@ -1,0 +1,20 @@
+{
+    "search_joke.intent": [
+        "konta ditzakezu honi buruzko txisteak: {search}",
+        "konta dezakezu txiste {bilatu}(r|)ik?",
+        "badakizu {search}(r|)i buruzko txisterik",
+        "badakizu txiste {search}(r|)ik",
+        "{search}(r|)i buruzko txistea",
+        "kontatu {search}(r|)i buruzko txiste bat",
+        "kontatu txiste {search} bat",
+        "kontadazu {search}(r|)i buruzko txiste bat",
+        "kontadazu txiste {search} bat"
+    ],
+    "joke.intent": [
+        "txisteak konta ditzakezu",
+        "badakizu txisterik",
+        "eginaraz iezadazu barre",
+        "kontatu txiste bat",
+        "kontadazu txiste bat"
+    ]
+}

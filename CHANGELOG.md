@@ -1,17 +1,29 @@
 # Changelog
 
-## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.0a1) (2024-12-01)
+## [0.3.1a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a3) (2024-12-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.12...0.3.0a1)
-
-**Implemented enhancements:**
-
-- dont require internet [\#36](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/issues/36)
-- add french jokes [\#35](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/issues/35)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a2...0.3.1a3)
 
 **Merged pull requests:**
 
-- feat: offline jokes [\#39](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/39) ([JarbasAl](https://github.com/JarbasAl))
+- import galician and basque translations [\#45](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/45) ([JarbasAl](https://github.com/JarbasAl))
+- import galician translations [\#44](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/44) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a2) (2024-12-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a1...0.3.1a2)
+
+**Merged pull requests:**
+
+- pt-pt/translate [\#43](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/43) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [0.3.1a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a1) (2024-12-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.0...0.3.1a1)
+
+**Merged pull requests:**
+
+- fix: choose joke type per language support [\#41](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/41) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
