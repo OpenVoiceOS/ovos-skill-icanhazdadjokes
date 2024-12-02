@@ -1,11 +1,12 @@
 # Changelog
 
-## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a2) (2024-12-02)
+## [0.3.1a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a3) (2024-12-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a2...0.3.1a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a2...0.3.1a3)
 
 **Merged pull requests:**
 
+- import galician and basque translations [\#45](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/45) ([JarbasAl](https://github.com/JarbasAl))
 - import galician translations [\#44](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/44) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a2) (2024-12-01)
