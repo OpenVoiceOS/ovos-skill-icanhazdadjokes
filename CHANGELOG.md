@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a2) (2024-12-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a2...0.3.1a2)
+
+**Merged pull requests:**
+
+- import galician translations [\#44](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/44) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a2) (2024-12-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a1...0.3.1a2)
+
+**Merged pull requests:**
+
+- pt-pt/translate [\#43](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/43) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.3.1a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a1) (2024-12-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.0...0.3.1a1)
