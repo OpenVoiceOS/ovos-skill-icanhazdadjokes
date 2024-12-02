@@ -7,5 +7,8 @@
     "dev_jokes.dialog": [
         "Zer dira 8 Bocabits? BocaByte bat",
         "Zer da terapeuta bat? - 1024 Gigapeuta"
+    ],
+    "no_joke.dialog": [
+        "Ezin izan dut {search}(r|)i buruzko txisterik aurkitu"
     ]
 }
