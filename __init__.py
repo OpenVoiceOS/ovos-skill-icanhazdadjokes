@@ -27,7 +27,7 @@ class JokingSkill(OVOSSkill):
         elif self.lang.split("-")[0] in ["cs", "es", "eu", "gl", "hu", "it", "pl", "sv"]:
             self.speak_dialog("dev_jokes")
         else:
-            self.speak_dialog("general_jokes")
+            self.speak_dialog("dad_jokes")
 
     @intent_handler("search_joke.intent")
     def handle_search_joke(self, message: Message) -> None:
