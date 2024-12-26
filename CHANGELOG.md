@@ -1,29 +1,20 @@
 # Changelog
 
-## [0.3.1a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a3) (2024-12-02)
+## [0.3.2a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.2a1) (2024-12-26)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a2...0.3.1a3)
-
-**Merged pull requests:**
-
-- import galician and basque translations [\#45](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/45) ([JarbasAl](https://github.com/JarbasAl))
-- import galician translations [\#44](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/44) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a2) (2024-12-01)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a1...0.3.1a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.2a1...0.3.2a1)
 
 **Merged pull requests:**
 
-- pt-pt/translate [\#43](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/43) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- fix: default to dad jokes [\#49](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/49) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.3.1a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a1) (2024-12-01)
+## [0.3.2a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.2a1) (2024-12-13)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.0...0.3.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1...0.3.2a1)
 
 **Merged pull requests:**
 
-- fix: choose joke type per language support [\#41](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/41) ([JarbasAl](https://github.com/JarbasAl))
+- adjusting German translation from joergz2 [\#47](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/47) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
