@@ -1,9 +1,9 @@
-badakizu txiste {search}(r|)ik
-badakizu {search}(r|)i buruzko txisterik
-konta dezakezu txiste {bilatu}(r|)ik?
-konta ditzakezu honi buruzko txisteak: {search}
+badakizu txiste {search}
+badakizu {search} buruzko txisterik
+konta dezakezu txiste {search}
+konta ditzakezu honi buruzko txisteak {search}
 kontadazu txiste {search} bat
-kontadazu {search}(r|)i buruzko txiste bat
+kontadazu {search} buruzko txiste bat
 kontatu txiste {search} bat
-kontatu {search}(r|)i buruzko txiste bat
-{search}(r|)i buruzko txistea
+kontatu {search} buruzko txiste bat
+{search} buruzko txistea
