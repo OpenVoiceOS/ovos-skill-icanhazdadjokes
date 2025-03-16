@@ -1,29 +1,13 @@
 # Changelog
 
-## [0.3.3a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.3a3) (2025-02-28)
+## [0.3.4a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.4a1) (2025-03-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.3a2...0.3.3a3)
-
-**Merged pull requests:**
-
-- Translations update [\#54](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/54) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.3.3a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.3a2) (2025-01-25)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.3a1...0.3.3a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.3...0.3.4a1)
 
 **Merged pull requests:**
 
-- fix automations [\#52](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/52) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.3.3a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.3a1) (2024-12-29)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.2...0.3.3a1)
-
-**Merged pull requests:**
-
-- Add Catalan translation [\#51](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/51) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Add Catalan translation [\#50](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/50) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- adding German translation [\#57](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/57) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- adding German translation [\#56](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/56) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
