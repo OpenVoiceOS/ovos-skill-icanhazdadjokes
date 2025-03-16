@@ -7,6 +7,7 @@
 **Merged pull requests:**
 
 - adding German translation [\#57](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/57) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- adding German translation [\#56](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/56) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
