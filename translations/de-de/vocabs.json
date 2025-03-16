@@ -1,0 +1,17 @@
+{
+  "Programmer.voc": [
+    "Programmierer",
+    "Entwickler"
+  ],
+  "ChuckNorris.voc": [
+    "Chuck Norris"
+  ],
+  "Pun.voc": [
+    "Wortwitz",
+    "Wortspiel",
+    "witzeln"
+  ],
+  "Dad.voc": [
+    "(Papa|Vater)"
+  ]
+}
