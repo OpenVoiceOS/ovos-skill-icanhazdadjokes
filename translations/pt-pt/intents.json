@@ -1,8 +1,8 @@
 {
     "search_joke.intent": [
-        "(conta|conta-me|diz-me) uma (piada|anedota) sobre {search}",
-        "(piada|anedota) sobre {search}",
-        "sabes alguma (piada|anedota) sobre {search}"
+        "(conta|conta-me|diz-me) uma (piada|anedota) sobre {query}",
+        "(piada|anedota) sobre {query}",
+        "sabes alguma (piada|anedota) sobre {query}"
     ],
     "joke.intent": [
         "(conta|diz|conta-me|diz-me) uma (piada|anedota)",
