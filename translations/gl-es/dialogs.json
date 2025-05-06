@@ -1,7 +1,7 @@
 {
     "blondes_jokes.dialog": [],
     "no_joke.dialog": [
-        "non dei atopado ningunha brincadeira sobre {search}"
+        "non dei atopado ningunha brincadeira sobre {query}"
     ],
     "general_jokes.dialog": [],
     "chuck_norris_jokes.dialog": [],

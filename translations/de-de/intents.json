@@ -1,14 +1,14 @@
 {
   "search_joke.intent": [
-    "Mache einen Witz über {search}",
-    "Mache einen {search} Witz",
-    "erzähl einen {search} Witz",
-    "erzähl mir einen Witz über {search}",
-    "erzähl mir einen {search} Witz",
-    "erzähle einen Witz über {search}",
-    "kannst du Witze über {search} erzählen",
-    "kannst du {search} Witze erzählen",
-    "kennst du einen {search} Witz"
+    "Mache einen Witz über {query}",
+    "Mache einen {query} Witz",
+    "erzähl einen {query} Witz",
+    "erzähl mir einen Witz über {query}",
+    "erzähl mir einen {query} Witz",
+    "erzähle einen Witz über {query}",
+    "kannst du Witze über {query} erzählen",
+    "kannst du {query} Witze erzählen",
+    "kennst du einen {query} Witz"
   ],
   "joke.intent": [
     "Bring mich zum Lachen",

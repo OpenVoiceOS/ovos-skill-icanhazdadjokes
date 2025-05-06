@@ -9,6 +9,6 @@
         "Zer da terapeuta bat? - 1024 Gigapeuta"
     ],
     "no_joke.dialog": [
-        "Ezin izan dut {search}(r|)i buruzko txisterik aurkitu"
+        "Ezin izan dut {query}(r|)i buruzko txisterik aurkitu"
     ]
 }

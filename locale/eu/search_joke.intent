@@ -1,9 +1,9 @@
-badakizu txiste {search}
-badakizu {search} buruzko txisterik
-konta dezakezu txiste {search}
-konta ditzakezu honi buruzko txisteak {search}
-kontadazu txiste {search} bat
-kontadazu {search} buruzko txiste bat
-kontatu txiste {search} bat
-kontatu {search} buruzko txiste bat
-{search} buruzko txistea
+badakizu txiste {query}
+badakizu {query} buruzko txisterik
+konta dezakezu txiste {query}
+konta ditzakezu honi buruzko txisteak {query}
+kontadazu txiste {query} bat
+kontadazu {query} buruzko txiste bat
+kontatu txiste {query} bat
+kontatu {query} buruzko txiste bat
+{query} buruzko txistea
