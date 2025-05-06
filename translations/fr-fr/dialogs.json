@@ -985,7 +985,7 @@
         "Le jour de sa mort, Kennedy s'est dit qu'il était bon de sortir en voiture. Car ça permet de se vider la tête."
     ],
     "no_joke.dialog": [
-        "je n'ai trouvé aucune blague sur {search}"
+        "je n'ai trouvé aucune blague sur {query}"
     ],
     "general_jokes.dialog": [
         "Qu'est-ce qui est bleu, blanc et rouge ? Un schtroumf qui saigne du nez.",

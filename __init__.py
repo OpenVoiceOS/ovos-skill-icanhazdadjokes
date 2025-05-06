@@ -31,7 +31,7 @@ class JokingSkill(OVOSSkill):
 
     @intent_handler("search_joke.intent")
     def handle_search_joke(self, message: Message) -> None:
-        category = message.data["search"].lower()
+        category = message.data["query"].lower()
         self.log.debug("joke search: %s", category)
 
         # TODO self.voc_match more joke types
@@ -45,4 +45,4 @@ class JokingSkill(OVOSSkill):
         elif self.voc_match(voc_filename="Pun", utt=category, lang=self.lang):
             self.speak_dialog("puns")
         else:
-            self.speak_dialog("no_joke", {"search": category})
+            self.speak_dialog("no_joke", {"query": category})

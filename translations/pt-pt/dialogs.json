@@ -3,7 +3,7 @@
 
   ],
   "no_joke.dialog": [
-    "não encontrei nenhuma (anedota|piada) sobre {search}"
+    "não encontrei nenhuma (anedota|piada) sobre {query}"
   ],
   "general_jokes.dialog": [
     "O que está escrito na lápide de um matemático? \"Ele não calculou isso.\"",

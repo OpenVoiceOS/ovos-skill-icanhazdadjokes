@@ -3,7 +3,7 @@
 
   ],
   "no_joke.dialog": [
-    "ich konnte keinen Witz über {search} finden"
+    "ich konnte keinen Witz über {query} finden"
   ],
   "general_jokes.dialog": [
     "Was steht auf dem Grabstein eines Mathematikers? 'Damit hat er nicht gerechnet.'",

@@ -1,7 +1,7 @@
 {
     "blondes_jokes.dialog": [],
     "no_joke.dialog": [
-        "i could not find any joke about {search}"
+        "i could not find any joke about {query}"
     ],
     "general_jokes.dialog": [
         "What is written on the gravestone of a mathematician? \"He didn’t calculate this.\"",

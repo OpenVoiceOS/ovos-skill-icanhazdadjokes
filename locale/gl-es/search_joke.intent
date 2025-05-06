@@ -1,9 +1,9 @@
-conta un chiste de {search}
-conta un chiste sobre {search}
-cóntame un chiste de {search}
-cóntame un chiste sobre {search}
-di un chiste de {search}
-sabes algún chiste de {search}
-sabes algún chiste sobre {search}
-sabes chistes sobre {search}
-sabes contar chistes sobre {search}
+conta un chiste de {query}
+conta un chiste sobre {query}
+cóntame un chiste de {query}
+cóntame un chiste sobre {query}
+di un chiste de {query}
+sabes algún chiste de {query}
+sabes algún chiste sobre {query}
+sabes chistes sobre {query}
+sabes contar chistes sobre {query}

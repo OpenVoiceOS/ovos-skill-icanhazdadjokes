@@ -1,5 +1,5 @@
 {
     "no_joke.dialog": [
-        "jeg kunne ikke finde nogen joke om {search}"
+        "jeg kunne ikke finde nogen joke om {query}"
     ]
 }
