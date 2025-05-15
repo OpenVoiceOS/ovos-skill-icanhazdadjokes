@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.3.5a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.5a1) (2025-05-06)
+## [0.3.6a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.6a1) (2025-05-15)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.4...0.3.5a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.5...0.3.6a1)
 
 **Merged pull requests:**
 
-- feat: standardize entity slots [\#60](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/60) ([JarbasAl](https://github.com/JarbasAl))
+- Std [\#62](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/62) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
