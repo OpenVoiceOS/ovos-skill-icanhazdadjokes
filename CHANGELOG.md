@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.8a5](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a5) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a4...0.3.8a5)
+
+**Merged pull requests:**
+
+- chore\(deps\): update stefanzweifel/git-auto-commit-action action to v7 [\#73](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/73) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.3.8a4](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a4) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a3...0.3.8a4)
