@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.8a4](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a3...0.3.8a4)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency ovos-workshop to v8 [\#71](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.3.8a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a3) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a2...0.3.8a3)
