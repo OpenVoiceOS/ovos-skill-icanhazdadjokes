@@ -1,17 +1,17 @@
 {
   "Programmer.voc": [
     "Programmør",
-    null
+    "udvikler"
   ],
   "ChuckNorris.voc": [
-    null
+    "chuck norris"
   ],
   "Pun.voc": [
-    null,
+    "ordspil",
     "Ordleg",
-    null
+    "spøg"
   ],
   "Dad.voc": [
-    null
+    "Far"
   ]
 }
