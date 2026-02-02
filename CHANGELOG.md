@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.8a7](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a7) (2026-02-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a6...0.3.8a7)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/checkout action to v6 [\#67](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.3.8a6](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a6) (2026-01-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a5...0.3.8a6)
