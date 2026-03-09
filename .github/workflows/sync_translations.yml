@@ -1,0 +1,12 @@
+name: Sync Translations
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev]
+
+jobs:
+  sync_translations:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/sync-translations.yml@dev
+    secrets: inherit
+    with:
+      branch: dev

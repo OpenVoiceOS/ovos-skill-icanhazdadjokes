@@ -1,5 +1,6 @@
 {
-    "title": "Jokes",
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "name": "Jokes",
     "description": "Brighten your day with dad humor. Laughter is not guaranteed, but eye rolls are likely.",
     "examples": [
         "Tell me a joke.",
