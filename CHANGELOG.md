@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.9a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.9a1) (2026-03-24)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a7...0.3.9a1)
+
+**Merged pull requests:**
+
+- fix: rename bare lang code locale directories [\#76](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/76) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- Complete French joke locale metadata [\#75](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/75) ([goldyfruit](https://github.com/goldyfruit))
+
 ## [0.3.8a7](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a7) (2026-02-02)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a6...0.3.8a7)
