@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.10a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.10a1) (2026-04-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.9a1...0.3.10a1)
+
+**Merged pull requests:**
+
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#78](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/78) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.9a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.9a1) (2026-03-24)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a7...0.3.9a1)
