@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.10a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.10a2) (2026-04-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.10a1...0.3.10a2)
+
+**Merged pull requests:**
+
+- ci: modernize GitHub workflows [\#80](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/80) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.10a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.10a1) (2026-04-03)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.9a1...0.3.10a1)
