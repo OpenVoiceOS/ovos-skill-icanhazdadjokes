@@ -1,4 +1,5 @@
 name: Release Preview
+
 on:
   pull_request:
     branches: [dev]
@@ -8,3 +9,6 @@ jobs:
   release_preview:
     uses: OpenVoiceOS/gh-automations/.github/workflows/release-preview.yml@dev
     secrets: inherit
+    with:
+      package_name: 'ovos_skill_icanhazdadjokes'
+      version_file: 'version.py'
