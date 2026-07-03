@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.11a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.11a1) (2026-07-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.10a3...0.3.11a1)
+
+**Merged pull requests:**
+
+- fix: lowercase .voc base names + widen en-US joke coverage [\#85](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/85) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.10a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.10a3) (2026-04-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.10a2...0.3.10a3)
