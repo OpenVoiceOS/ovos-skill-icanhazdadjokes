@@ -1,17 +1,17 @@
 {
-    "Programmer.voc": [
+    "programmer.voc": [
         "Programmer",
         "developer"
     ],
-    "ChuckNorris.voc": [
+    "chuck_norris.voc": [
         "chuck norris"
     ],
-    "Pun.voc": [
+    "pun.voc": [
         "pun",
         "Wordplay",
         "quip"
     ],
-    "Dad.voc": [
+    "dad.voc": [
         "Dad"
     ]
 }

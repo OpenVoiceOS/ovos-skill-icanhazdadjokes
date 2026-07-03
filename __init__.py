@@ -36,13 +36,13 @@ class JokingSkill(OVOSSkill):
 
         # TODO self.voc_match more joke types
         # TODO allow blacklisting some categories in settings.json (kid friendly setting by default)
-        if self.voc_match(voc_filename="ChuckNorris", utt=category, lang=self.lang):
+        if self.voc_match(voc_filename="chuck_norris", utt=category, lang=self.lang):
             self.speak_dialog("chuck_norris_jokes")
-        elif self.voc_match(voc_filename="Dad", utt=category, lang=self.lang):
+        elif self.voc_match(voc_filename="dad", utt=category, lang=self.lang):
             self.speak_dialog("dad_jokes")
-        elif self.voc_match(voc_filename="Programmer", utt=category, lang=self.lang):
+        elif self.voc_match(voc_filename="programmer", utt=category, lang=self.lang):
             self.speak_dialog("dev_jokes")
-        elif self.voc_match(voc_filename="Pun", utt=category, lang=self.lang):
+        elif self.voc_match(voc_filename="pun", utt=category, lang=self.lang):
             self.speak_dialog("puns")
         else:
             self.speak_dialog("no_joke", {"query": category})
