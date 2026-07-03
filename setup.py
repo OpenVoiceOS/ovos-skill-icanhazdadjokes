@@ -89,7 +89,7 @@ setup(
             "ovoscope>=1.5.0,<2.0.0",
             "pytest>=7.0.0,<9",
             "pytest-timeout>=2.0.0",
-            "padacioso>=0.1.1",
+            "ovos-padatious>=1.0.0,<2.0.0",
         ]
     },
     include_package_data=True,
