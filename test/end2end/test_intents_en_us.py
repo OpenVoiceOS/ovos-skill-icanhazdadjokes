@@ -41,22 +41,45 @@ class _IntentRoutingMixin:
 
     @classmethod
     def setUpClass(cls):
-        cls.minicroft = get_minicroft([SKILL_ID])
+        # the padatious models for this skill's .intent files take a while
+        # to train on CI runners, so allow a generous READY window
+        cls.minicroft = get_minicroft([SKILL_ID], max_wait=300)
+        # Real padatious trains its neural model in a background thread
+        # *after* the skill/service report "ready" -- an utterance fired
+        # immediately after boot can race that training and see zero
+        # matches even though the same utterance matches correctly moments
+        # later. Warm the model up here (outside any per-test deadline) so
+        # that lag never leaks into an individual test's assertion.
+        deadline = time.monotonic() + 60
+        warmed = False
+        while time.monotonic() < deadline and not warmed:
+            warmed = bool(cls._route_raw(cls.minicroft, "tell me a joke"))
+            if not warmed:
+                time.sleep(1)
+        assert warmed, "padatious model never finished warming up within 60s"
 
     @classmethod
     def tearDownClass(cls):
         if getattr(cls, "minicroft", None):
             cls.minicroft.stop()
 
-    def _route(self, utterance: str, allowed):
-        """Emit an utterance and return the skill intent it routed to."""
+    @staticmethod
+    def _route_raw(minicroft, utterance: str):
+        """Emit an utterance and return the raw list of intent basenames
+        (``.intent`` suffix stripped) the skill's handlers were dispatched
+        to. Shared by the warm-up probe and ``_route`` below."""
         matched = []
         handlers = {}
         for intent_file in (JOKE, SEARCH):
-            msg_type = f"{SKILL_ID}:{intent_file}"
+            base = intent_file[:-len(".intent")]
             handler = lambda msg, name=intent_file: matched.append(name)
-            handlers[msg_type] = handler
-            self.minicroft.bus.on(msg_type, handler)
+            # The dispatched handler message drops the ".intent" filename
+            # suffix on current OVOS-INTENT-2 naming; register both forms so
+            # this isn't pinned to whichever ovos-workshop version is
+            # installed (see ovos-skill-volume's end2end suite).
+            for msg_type in (f"{SKILL_ID}:{intent_file}", f"{SKILL_ID}:{base}"):
+                handlers[msg_type] = handler
+                minicroft.bus.on(msg_type, handler)
         try:
             session = Session(f"e2e-en_us-{hash(utterance)}")
             session.lang = LANG
@@ -65,7 +88,7 @@ class _IntentRoutingMixin:
             # freshly built Session, so seed empty lists to keep matching happy
             session.blacklisted_intents = []
             session.blacklisted_skills = []
-            self.minicroft.bus.emit(Message(
+            minicroft.bus.emit(Message(
                 "recognizer_loop:utterance",
                 {"utterances": [utterance], "lang": LANG},
                 {"session": session.serialize()},
@@ -75,7 +98,12 @@ class _IntentRoutingMixin:
                 time.sleep(0.2)
         finally:
             for msg_type, handler in handlers.items():
-                self.minicroft.bus.remove(msg_type, handler)
+                minicroft.bus.remove(msg_type, handler)
+        return matched
+
+    def _route(self, utterance: str, allowed):
+        """Emit an utterance and return the skill intent it routed to."""
+        matched = self._route_raw(self.minicroft, utterance)
         self.assertTrue(
             matched,
             f"{utterance!r} did not route to the skill",
