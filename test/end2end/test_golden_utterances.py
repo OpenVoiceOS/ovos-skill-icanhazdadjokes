@@ -49,7 +49,7 @@ GOLDEN_PATH = Path(__file__).parent / "golden_utterances.jsonl"
 NEGATIVE_UTTERANCES = [
     ("what's the weather like today", "ovos-skill-weather.openvoiceos"),
     ("tell me your kernel version", "ovos-skill-diagnostics.openvoiceos"),
-    ("tell me a fuster quote", "ovos-skill-fuster-quotes.openvoiceos"),
+    ("who was Joan Fuster", "ovos-skill-fuster-quotes.openvoiceos"),
     ("say the current time", "ovos-skill-time.openvoiceos"),
     ("set a timer for 5 minutes", "ovos-skill-alerts.openvoiceos"),
     ("play some music", "ovos-skill-music.openvoiceos"),
