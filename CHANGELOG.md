@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.12a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.12a1) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.11a4...0.3.12a1)
+
+**Merged pull requests:**
+
+- fix: ship every en-US intent in all locales [\#95](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/95) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.11a4](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.11a4) (2026-08-12)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.11a3...0.3.11a4)
