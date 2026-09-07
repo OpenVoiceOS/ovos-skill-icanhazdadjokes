@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.0a1) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.12a1...0.4.0a1)
+
+**Merged pull requests:**
+
+- feat: kab, pt-BR, nl-NL locale parity [\#97](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/97) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.12a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.12a1) (2026-09-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.11a4...0.3.12a1)
