@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.0a2) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.0a1...0.4.0a2)
+
+**Merged pull requests:**
+
+- Update dependency pytest to v9 [\#86](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/86) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.4.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.0a1) (2026-09-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.12a1...0.4.0a1)
