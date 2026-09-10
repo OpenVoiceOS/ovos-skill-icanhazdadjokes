@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.1a1) (2026-09-10)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.0a2...0.4.1a1)
+
+**Merged pull requests:**
+
+- fix: remove literal metacharacters from en-US dialog phrases [\#100](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/100) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.4.0a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.0a2) (2026-09-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.0a1...0.4.0a2)
