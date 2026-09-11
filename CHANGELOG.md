@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.1a2) (2026-09-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.1a1...0.4.1a2)
+
+**Merged pull requests:**
+
+- translate: fill en-US vocabulary and dialog gaps in eleven locales [\#102](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/102) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.4.1a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.1a1) (2026-09-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.0a2...0.4.1a1)
