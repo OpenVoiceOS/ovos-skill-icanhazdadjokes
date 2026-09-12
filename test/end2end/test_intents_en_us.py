@@ -25,6 +25,7 @@ the suite offline.
 
 Run: pytest test/end2end/ -v
 """
+import re
 import time
 from pathlib import Path
 from unittest import TestCase
@@ -42,10 +43,20 @@ SEARCH = "search_joke.intent"
 
 
 def _dialog_lines(name: str) -> set:
-    """Read a ``.dialog`` file's own lines, independent of the handler."""
+    """Read a ``.dialog`` file's own lines, independent of the handler.
+
+    Collapses interior whitespace runs the same way
+    ``ovos_spec_tools.expansion.expand`` does when the renderer speaks a
+    line, so a raw file line with a double space (several of these jokes
+    carry one after the punctuation) still matches the normalized text the
+    skill actually speaks.
+    """
     path = LOCALE_EN_US / f"{name}.dialog"
     with open(path, encoding="utf-8") as handle:
-        return {line.strip() for line in handle if line.strip()}
+        return {
+            re.sub(r"\s+", " ", line.strip())
+            for line in handle if line.strip()
+        }
 
 
 # Read once, directly from the shipped dialog files -- never restated from
