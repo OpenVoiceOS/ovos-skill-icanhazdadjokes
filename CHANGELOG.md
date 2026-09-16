@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.1a3) (2026-09-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.1a2...0.4.1a3)
+
+**Merged pull requests:**
+
+- test: add effect assertions to en-US end2end suite [\#103](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/103) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.4.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.1a2) (2026-09-11)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.1a1...0.4.1a2)
