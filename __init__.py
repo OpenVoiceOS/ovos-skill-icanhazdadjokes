@@ -19,11 +19,25 @@ from ovos_workshop.skills import OVOSSkill
 
 class JokingSkill(OVOSSkill):
 
+    def _speak_puns(self) -> None:
+        """Speak from ``puns.dialog`` when this locale ships one, else fall
+        back to ``general_jokes``. Checked against the skill's own
+        lang-scoped dialog renderer -- the same object ``speak_dialog``
+        renders from -- rather than a filesystem path we test ourselves, so
+        a locale with no puns file never speaks the bare key "puns" (which
+        is what an unrendered dialog name falls back to) and one that does
+        keeps its own pun category rather than losing it to the general
+        one."""
+        if "puns" in self.dialog_renderer.templates:
+            self.speak_dialog("puns")
+        else:
+            self.speak_dialog("general_jokes")
+
     @intent_handler("joke.intent")
     def handle_joke(self, message: Optional[Message] = None) -> None:
         # TODO - refactor this once lang support is more uniform
         if self.lang.startswith("pt"):
-            self.speak_dialog("puns")
+            self._speak_puns()
         elif self.lang.split("-")[0] in ["cs", "es", "eu", "gl", "hu", "it", "pl", "sv"]:
             self.speak_dialog("dev_jokes")
         else:
@@ -43,6 +57,6 @@ class JokingSkill(OVOSSkill):
         elif self.voc_match(voc_filename="programmer", utt=category, lang=self.lang):
             self.speak_dialog("dev_jokes")
         elif self.voc_match(voc_filename="pun", utt=category, lang=self.lang):
-            self.speak_dialog("puns")
+            self._speak_puns()
         else:
             self.speak_dialog("no_joke", {"query": category})
