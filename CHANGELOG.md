@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.5.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.1a3...0.5.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): fill es-ES, eu-ES and gl-ES gaps against en-US [\#109](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/109) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.4.1a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.1a3) (2026-09-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.1a2...0.4.1a3)
