@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.19.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): eu-ES joke collections translated from fr-FR [\#141](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/141) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+- feat\(locale\): kab joke collections translated from fr-FR [\#140](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/140) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.17.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.17.0a1) (2026-09-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.16.0a1...0.17.0a1)
@@ -468,25 +477,13 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.10...0.2.11a1)
 
-**Merged pull requests:**
-
-- da-dk/translate [\#33](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/33) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
 ## [0.2.10](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.10) (2024-11-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.10a1...0.2.10)
 
-**Merged pull requests:**
-
-- Release 0.2.10a1 [\#32](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/32) ([github-actions[bot]](https://github.com/apps/github-actions))
-
 ## [0.2.10a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.10a1) (2024-11-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.9...0.2.10a1)
-
-**Merged pull requests:**
-
-- Add Catalan translation [\#31](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/31) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 ## [0.2.9](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.9) (2024-11-19)
 
