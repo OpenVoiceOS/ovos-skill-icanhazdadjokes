@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.23.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.23.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.21.0a1...0.23.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): it-IT joke collections translated from fr-FR [\#146](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/146) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
+## [0.21.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.21.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.22.0a1...0.21.0a1)
+
+## [0.22.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.22.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.20.0a1...0.22.0a1)
+
 ## [0.20.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.20.0a1) (2026-09-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.20.0a1)
@@ -440,11 +456,6 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.0...0.3.1a1)
 
-**Merged pull requests:**
-
-- Release 0.3.1a1 [\#42](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/42) ([github-actions[bot]](https://github.com/apps/github-actions))
-- fix: choose joke type per language support [\#41](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/41) ([JarbasAl](https://github.com/JarbasAl))
-
 ## [0.3.0](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.0) (2024-12-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.0a1...0.3.0)
@@ -452,10 +463,6 @@
 ## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.0a1) (2024-12-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.2.12...0.3.0a1)
-
-**Merged pull requests:**
-
-- feat: offline jokes [\#39](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/39) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.2.12](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.2.12) (2024-11-30)
 
