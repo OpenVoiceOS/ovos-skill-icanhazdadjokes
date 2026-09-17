@@ -1,0 +1,5 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "tzemreḍ ad iyi-d-tiniḍ ccetla n baba", "lang": "kab", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "tesɛiḍ ccetla igerrzen n baba", "lang": "kab", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "ini-yi ccetla n baba", "lang": "kab", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "tzemreḍ ad iyi-d-tiniḍ ccetla ɣef chuck norris", "lang": "kab", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "tesɛiḍ ccetla n Aberrmid", "lang": "kab", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
