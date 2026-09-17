@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.10.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.10.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.9.0a1...0.10.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): da-DK joke collections translated from fr-FR [\#123](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/123) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+- feat\(locale\): pt-BR joke collections translated from fr-FR [\#122](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/122) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
+## [0.9.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.9.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.8.0a1...0.9.0a1)
+
+## [0.8.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.8.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.7.0a1...0.8.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): gl-ES joke collections translated from fr-FR [\#128](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/128) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+- feat\(locale\): lt-LT joke collections translated from fr-FR [\#127](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/127) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+- feat\(locale\): sv-SE joke collections translated from fr-FR [\#126](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/126) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+- feat\(locale\): ca-ES joke collections translated from fr-FR [\#125](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/125) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.7.0a1) (2026-09-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.6.0a1...0.7.0a1)
