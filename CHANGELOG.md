@@ -1,32 +1,44 @@
 # Changelog
 
+## [0.24.1a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.24.1a1) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.24.0a1...0.24.1a1)
+
+**Merged pull requests:**
+
+- fix: drop the upper bound on the ovos-padatious test pin [\#152](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/152) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
+## [0.24.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.24.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.23.0a1...0.24.0a1)
+
 ## [0.23.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.23.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.22.0a1...0.23.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.21.0a1...0.23.0a1)
 
 **Merged pull requests:**
 
 - feat\(locale\): it-IT joke collections translated from fr-FR [\#146](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/146) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
 
-## [0.22.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.22.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.21.0a1...0.22.0a1)
-
 ## [0.21.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.21.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.20.0a1...0.21.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.22.0a1...0.21.0a1)
+
+## [0.22.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.22.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.20.0a1...0.22.0a1)
 
 ## [0.20.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.20.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.20.0a1)
-
-## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.18.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.20.0a1)
 
 ## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.19.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.19.0a1)
+
+## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.18.0a1)
 
 **Merged pull requests:**
 
@@ -431,18 +443,9 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a3...0.3.1)
 
-**Merged pull requests:**
-
-- Release 0.3.1a3 [\#46](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/46) ([github-actions[bot]](https://github.com/apps/github-actions))
-
 ## [0.3.1a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a3) (2024-12-02)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.1a2...0.3.1a3)
-
-**Merged pull requests:**
-
-- import galician and basque translations [\#45](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/45) ([JarbasAl](https://github.com/JarbasAl))
-- import galician translations [\#44](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/44) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.1a2) (2024-12-01)
 
