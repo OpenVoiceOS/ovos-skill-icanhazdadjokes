@@ -1,0 +1,22 @@
+{
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "name": "Żarty",
+    "description": "Rozjaśnij sobie dzień tacierzyńskim humorem. Śmiech nie jest gwarantowany, ale przewracanie oczami jak najbardziej.",
+    "examples": [
+        "Opowiedz mi żart.",
+        "Powiedz żart.",
+        "Znasz jakieś żarty?",
+        "Umiesz opowiadać żarty?",
+        "Rozśmiesz mnie.",
+        "Opowiedz mi żart o dentystach.",
+        "Znasz jakieś żarty o Chucku Norrisie?"
+    ],
+    "tags": [
+         "Rozrywka",
+        "żart",
+        "żarty",
+        "humor",
+        "śmiech",
+        "zabawne"
+    ]
+}

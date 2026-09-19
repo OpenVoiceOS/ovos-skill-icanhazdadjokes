@@ -1,0 +1,5 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "kun je me een papa grap vertellen", "lang": "nl-NL", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "ken je goede papa grappen", "lang": "nl-NL", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "vertel me een papa grap", "lang": "nl-NL", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "kun je me grappen over chuck norris vertellen", "lang": "nl-NL", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "ken je goede Programmeur grappen", "lang": "nl-NL", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
