@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.25.3a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.3a2) (2026-09-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.3a1...0.25.3a2)
+
+**Merged pull requests:**
+
+- locale: machine translation for skill.json name and description \(unvouched\) [\#165](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/165) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.25.3a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.3a1) (2026-09-26)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.2a1...0.25.3a1)
@@ -392,17 +400,9 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.6a1...0.3.6)
 
-**Merged pull requests:**
-
-- Release 0.3.6a1 [\#63](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/63) ([github-actions[bot]](https://github.com/apps/github-actions))
-
 ## [0.3.6a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.6a1) (2025-05-15)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.5...0.3.6a1)
-
-**Merged pull requests:**
-
-- Std [\#62](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/62) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.3.5](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.5) (2025-05-06)
 
