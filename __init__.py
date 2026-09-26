@@ -17,7 +17,31 @@ from ovos_workshop.decorators import intent_handler
 from ovos_workshop.skills import OVOSSkill
 
 
+# Joke collections that some locales ship as their own `<name>_jokes.dialog`
+# file. They have no online source: every joke this skill speaks comes from a
+# shipped dialog. A locale reaches one of these collections by voice when it
+# ships both `<name>.voc`, to name the category, and `<name>_jokes.dialog`, to
+# hold the jokes. A locale that ships neither is unaffected and keeps the
+# answer it gives today.
+LOCAL_CATEGORIES = ("beauf", "blondes", "dark", "edgy")
+
+
 class JokingSkill(OVOSSkill):
+
+    def _speak_local_category(self, name: str) -> bool:
+        """Speak a random line from ``<name>_jokes.dialog`` and report
+        whether this locale can serve that category.
+
+        The check is against the skill's own lang-scoped dialog renderer --
+        the same object ``speak_dialog`` renders from -- for the reason
+        ``_speak_puns`` gives below: a locale that names the category in a
+        ``.voc`` file but ships no dialog for it would otherwise speak the
+        bare dialog key aloud. A False result lets the caller fall back to
+        the answer that locale gives today."""
+        if f"{name}_jokes" not in self.dialog_renderer.templates:
+            return False
+        self.speak_dialog(f"{name}_jokes")
+        return True
 
     def _speak_puns(self) -> None:
         """Speak from ``puns.dialog`` when this locale ships one, else fall
@@ -59,4 +83,13 @@ class JokingSkill(OVOSSkill):
         elif self.voc_match(voc_filename="pun", utt=category, lang=self.lang):
             self._speak_puns()
         else:
+            # Locale-local collections. `voc_match` returns False for a
+            # locale that ships no such `.voc` file, so this loop is a no-op
+            # everywhere the category is not offered.
+            for name in LOCAL_CATEGORIES:
+                if self.voc_match(voc_filename=name, utt=category,
+                                  lang=self.lang):
+                    if self._speak_local_category(name):
+                        return
+                    break
             self.speak_dialog("no_joke", {"query": category})
