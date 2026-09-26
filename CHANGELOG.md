@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.25.3a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.3a1) (2026-09-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.2a1...0.25.3a1)
+
+**Merged pull requests:**
+
+- fix\(pt-PT\): drop two puns that name a real person and mock their gender [\#162](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/162) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.25.2a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.2a1) (2026-09-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.1a2...0.25.2a1)
@@ -78,15 +86,15 @@
 
 ## [0.20.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.20.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.20.0a1)
-
-## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.19.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.20.0a1)
 
 ## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.18.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.18.0a1)
+
+## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.19.0a1)
 
 **Merged pull requests:**
 
@@ -400,17 +408,9 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.5a1...0.3.5)
 
-**Merged pull requests:**
-
-- Release 0.3.5a1 [\#61](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/61) ([github-actions[bot]](https://github.com/apps/github-actions))
-
 ## [0.3.5a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.5a1) (2025-05-06)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.4...0.3.5a1)
-
-**Merged pull requests:**
-
-- feat: standardize entity slots [\#60](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/60) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.3.4](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.4) (2025-03-16)
 
