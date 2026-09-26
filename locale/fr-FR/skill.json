@@ -1,0 +1,17 @@
+{
+  "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes",
+  "name": "Blagues",
+  "description": "Raconte des blagues générales, des blagues de papa, des calembours, des blagues de développeur et plus encore.",
+  "examples": [
+    "Raconte-moi une blague",
+    "Raconte-moi une blague de papa",
+    "Raconte-moi une blague de développeur",
+    "Raconte-moi une blague sur Chuck Norris"
+  ],
+  "tags": [
+    "blague",
+    "humour",
+    "divertissement"
+  ]
+}

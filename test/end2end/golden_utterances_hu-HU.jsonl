@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "mondj egy viccet", "lang": "hu-HU", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "tudsz jó vicceket mesélni", "lang": "hu-HU", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "ismersz jó vicceket", "lang": "hu-HU", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "mondj egy viccet Apa témában", "lang": "hu-HU", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "tudsz jó Chuck Norris vicceket mesélni", "lang": "hu-HU", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "ismersz Programozó vicceket", "lang": "hu-HU", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}

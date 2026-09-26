@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cuéntame un chiste", "lang": "es-ES", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "sabes algún chiste", "lang": "es-ES", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cuéntame un chiste bueno", "lang": "es-ES", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cuéntame un chiste de Papá", "lang": "es-ES", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cuéntame un chiste sobre chuck norris", "lang": "es-ES", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "sabes algún chiste de Programador", "lang": "es-ES", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}

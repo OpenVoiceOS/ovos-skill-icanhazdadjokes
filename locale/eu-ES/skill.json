@@ -1,0 +1,21 @@
+{
+  "name": "Txisteak",
+  "description": "Argitu zure eguna aitaren umorearekin. Barrerik ez da bermatzen, baina begiak biratzea bai da ohikoa.",
+  "examples": [
+    "Kontatu iezadazu txiste bat.",
+    "Esan txiste bat.",
+    "Ba al dakizu txisterik?",
+    "Txisteak konta ditzakezu?",
+    "Egidazu barre.",
+    "Kontatu iezadazu dentisten inguruko txiste bat.",
+    "Ba al dakizu Chuck Norrisen txisterik?"
+  ],
+  "tags": [
+    "entretenimendua",
+    "txistea",
+    "txisteak",
+    "umorea",
+    "umorea",
+    "dibertigarria"
+  ]
+}

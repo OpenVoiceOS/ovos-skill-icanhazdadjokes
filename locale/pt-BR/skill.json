@@ -1,0 +1,21 @@
+{
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "name": "Piadas",
+    "description": "Alegre o seu dia com humor de pai. Rir não é garantido, mas revirar os olhos é bem provável.",
+    "examples": [
+        "Me conte uma piada.",
+        "Fale uma piada.",
+        "Você conhece alguma piada?",
+        "Você consegue contar piadas?",
+        "Me faça rir.",
+        "Me conte uma piada sobre dentistas.",
+        "Você conhece piadas do Chuck Norris?"
+    ],
+    "tags": [
+         "Entertainment",
+        "piada",
+        "piadas",
+        "humor",
+        "engraçado"
+    ]
+}
