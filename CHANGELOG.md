@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.25.5a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.5a1) (2026-09-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.4a1...0.25.5a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): cut the 267 fr-FR dark\_jokes lines two decisions ordered cut [\#168](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/168) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.25.4a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.4a1) (2026-09-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.3a2...0.25.4a1)
@@ -86,31 +94,31 @@
 
 ## [0.23.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.23.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.22.0a1...0.23.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.21.0a1...0.23.0a1)
 
 **Merged pull requests:**
 
 - feat\(locale\): it-IT joke collections translated from fr-FR [\#146](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/146) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
 
-## [0.22.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.22.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.21.0a1...0.22.0a1)
-
 ## [0.21.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.21.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.20.0a1...0.21.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.22.0a1...0.21.0a1)
+
+## [0.22.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.22.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.20.0a1...0.22.0a1)
 
 ## [0.20.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.20.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.20.0a1)
-
-## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.19.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.20.0a1)
 
 ## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.18.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.18.0a1)
+
+## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.19.0a1)
 
 **Merged pull requests:**
 
@@ -340,10 +348,6 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a6...0.3.8a7)
 
-**Merged pull requests:**
-
-- chore\(deps\): update actions/checkout action to v6 [\#67](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
-
 ## [0.3.8a6](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a6) (2026-01-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a5...0.3.8a6)
@@ -371,10 +375,6 @@
 ## [0.3.8a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a3) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a2...0.3.8a3)
-
-**Merged pull requests:**
-
-- chore\(deps\): update dependency python to 3.14 [\#66](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [0.3.8a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a2) (2025-12-19)
 
