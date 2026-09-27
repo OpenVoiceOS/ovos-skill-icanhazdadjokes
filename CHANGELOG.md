@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.25.4a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.4a1) (2026-09-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.3a2...0.25.4a1)
+
+**Merged pull requests:**
+
+- fix\(kab\): the Greek epsilon in six locale files is the Latin open e [\#169](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/169) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.25.3a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.3a2) (2026-09-26)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.3a1...0.25.3a2)
@@ -78,31 +86,31 @@
 
 ## [0.23.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.23.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.21.0a1...0.23.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.22.0a1...0.23.0a1)
 
 **Merged pull requests:**
 
 - feat\(locale\): it-IT joke collections translated from fr-FR [\#146](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/146) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
 
-## [0.21.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.21.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.22.0a1...0.21.0a1)
-
 ## [0.22.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.22.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.20.0a1...0.22.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.21.0a1...0.22.0a1)
+
+## [0.21.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.21.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.20.0a1...0.21.0a1)
 
 ## [0.20.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.20.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.20.0a1)
-
-## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.18.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.20.0a1)
 
 ## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.19.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.19.0a1)
+
+## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.18.0a1)
 
 **Merged pull requests:**
 
@@ -380,17 +388,9 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.7...0.3.8a1)
 
-**Merged pull requests:**
-
-- chore: Configure Renovate [\#65](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/65) ([renovate[bot]](https://github.com/apps/renovate))
-
 ## [0.3.7](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.7) (2025-06-08)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.7a1...0.3.7)
-
-**Merged pull requests:**
-
-- Release 0.3.7a1 [\#64](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/64) ([github-actions[bot]](https://github.com/apps/github-actions))
 
 ## [0.3.7a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.7a1) (2025-06-08)
 
