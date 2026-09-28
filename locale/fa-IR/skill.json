@@ -1,0 +1,18 @@
+{
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "name": "Jokes",
+    "description": "روزتان را با جوک های بابایی شاد کنید. خنده تضمینی نیست، اما احتمالا چشم هایتان را می چرخانید.",
+    "examples": [
+        "یک جوک بگو",
+        "جوک بلدی",
+        "یک جوک درباره دندانپزشک ها بگو"
+    ],
+    "tags": [
+        "Entertainment",
+        "joke",
+        "jokes",
+        "humor",
+        "humour",
+        "funny"
+    ]
+}
