@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.25.6a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.6a1) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.5a2...0.25.6a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): drop runaway lines from the es-CO and fa-IR joke corpora [\#175](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/175) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.25.5a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.25.5a2) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.5a1...0.25.5a2)
@@ -375,10 +383,6 @@
 ## [0.3.8a4](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a4) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.8a3...0.3.8a4)
-
-**Merged pull requests:**
-
-- chore\(deps\): update dependency ovos-workshop to v8 [\#71](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [0.3.8a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.8a3) (2025-12-19)
 
