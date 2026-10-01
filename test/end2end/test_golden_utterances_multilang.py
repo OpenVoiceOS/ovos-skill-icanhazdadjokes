@@ -54,19 +54,11 @@ NEGATIVE_UTTERANCES = [
 
 def _load_rows(lang):
     path = END2END_DIR / f"golden_utterances_{lang}.jsonl"
-    rows = []
-    needs_manual = 0
+    # Rows flagged needs_manual still run: the flag marks a row no native
+    # speaker has vouched for, not a row the matcher is excused from.
     with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            row = json.loads(line)
-            if row.get("needs_manual"):
-                needs_manual += 1
-                continue
-            rows.append(row)
-    assert rows or needs_manual, f"{lang}: no golden rows"
+        rows = [json.loads(line) for line in f if line.strip()]
+    assert rows, f"{lang}: no golden rows"
     return rows
 
 
@@ -92,9 +84,6 @@ def _matched_names(mc, text, lang, session_id):
     return [m.data.get("intent_name") for m in msgs if m.msg_type == "ovos.intent.matched"]
 
 
-KNOWN_BUGS = {}
-
-
 def _make_locale_test_case(lang):
     rows = _load_rows(lang)
     negatives = [n for n in NEGATIVE_UTTERANCES if n[1] == lang]
@@ -117,12 +106,8 @@ def _make_locale_test_case(lang):
                 self.minicroft, row["utterance"], row["lang"],
                 f"golden-{row['lang']}-{row['intent_label']}-{row['utterance']}",
             )
-            matched = any(n in expected for n in names)
-            bug_key = (row["lang"], row["utterance"])
-            if bug_key in KNOWN_BUGS and not matched:
-                self.skipTest(f"known-bug: {KNOWN_BUGS[bug_key]}")
             self.assertTrue(
-                matched,
+                any(n in expected for n in names),
                 f"[{row['lang']}] {row['utterance']!r}: expected one of "
                 f"{sorted(expected)!r}, got {names!r}",
             )
@@ -158,3 +143,11 @@ del _lang, _cls  # for-loop variables leak into module globals; without this
 # deletion pytest also collects a spurious extra test class literally named
 # "_cls" (bound to whichever locale ran last), which boots a second,
 # redundant MiniCroft for that locale under a different collected name.
+
+
+def test_every_shipping_locale_has_a_golden_file():
+    golden = {p.stem.split("_", 2)[2] for p in END2END_DIR.glob("golden_utterances_*.jsonl")}
+    locale_root = Path(__file__).parents[2] / "locale"
+    shipping = {d.name for d in locale_root.iterdir()
+                if d.is_dir() and any(d.rglob("*.intent"))}
+    assert golden == shipping, f"golden files {sorted(golden ^ shipping)} differ from shipping locales"
