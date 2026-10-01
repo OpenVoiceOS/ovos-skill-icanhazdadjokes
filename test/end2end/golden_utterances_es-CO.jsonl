@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cuéntame un chiste", "lang": "es-CO", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "sabes algún chiste", "lang": "es-CO", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cuéntame un chiste sobre chuck norris", "lang": "es-CO", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "hazme reír", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "dime un chiste de programador", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "sabes algún chiste sobre desarrollador", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}

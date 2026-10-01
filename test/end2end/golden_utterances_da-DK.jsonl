@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "fortæl mig en vittighed", "lang": "da-DK", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "få mig til at grine", "lang": "da-DK", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "kan du fortælle vittigheder", "lang": "da-DK", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "fortæl mig en vittighed om Far", "lang": "da-DK", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "fortæl mig en chuck norris joke", "lang": "da-DK", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "joke om Programmør", "lang": "da-DK", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}

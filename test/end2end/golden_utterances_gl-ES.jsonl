@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cóntame un chiste", "lang": "gl-ES", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "di un chiste", "lang": "gl-ES", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "faime rir", "lang": "gl-ES", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "conta un chiste de Papá", "lang": "gl-ES", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "conta un chiste sobre chuck norris", "lang": "gl-ES", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "cóntame un chiste de Programador", "lang": "gl-ES", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}

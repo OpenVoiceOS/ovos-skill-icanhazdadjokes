@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "raccontami una barzelletta", "lang": "it-IT", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "conosci qualche barzelletta", "lang": "it-IT", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "raccontami una barzelletta divertente", "lang": "it-IT", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "raccontami una barzelletta su Papà", "lang": "it-IT", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "conosci barzellette su chuck norris", "lang": "it-IT", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "dimmi una barzelletta sui Programmatore", "lang": "it-IT", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
