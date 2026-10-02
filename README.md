@@ -6,6 +6,8 @@ An [OpenVoiceOS](https://github.com/OpenVoiceOS) skill that tells dad jokes, pro
 ## About
 This skill picks a joke type by language. It tells puns in Portuguese, programmer jokes in Czech, Spanish, Basque, Galician, Hungarian, Italian, Polish, and Swedish, and dad jokes in other languages. You can also ask for a joke by category.
 
+Every locale except fr-FR ships the beauf, blondes and edgy joke collections as machine translation from the French files. es-CO and fa-IR were drafted from the English files. The four category vocabularies are machine translation in every locale, fr-FR included. No native speaker has read any of these files: they are unvouched.
+
 _WARNING: Laughter is not guaranteed, but eye rolls are likely._
 
 ## Examples
