@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "řekni mi vtip", "lang": "cs-CZ", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "znáš nějaké dobré vtipy", "lang": "cs-CZ", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "řekni mi nějaký vtip", "lang": "cs-CZ", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "řekni mi vtip o Tati", "lang": "cs-CZ", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "znáš nějaké vtipy o Chuck Norris", "lang": "cs-CZ", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "řekni mi vtip týkající se Programátor", "lang": "cs-CZ", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false}

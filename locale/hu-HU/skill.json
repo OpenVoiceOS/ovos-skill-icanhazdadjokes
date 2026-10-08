@@ -1,0 +1,22 @@
+{
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "name": "Viccek",
+    "description": "Derítsd fel a napod papás humorral. A nevetés nem garantált, de a szemforgatás valószínű.",
+    "examples": [
+        "Mondj egy viccet.",
+        "Mesélj egy viccet.",
+        "Tudsz valami viccet?",
+        "Tudsz viccet mesélni?",
+        "Nevettess meg.",
+        "Mondj egy viccet a fogorvosokról.",
+        "Tudsz Chuck Norris viccet?"
+    ],
+    "tags": [
+         "Szórakozás",
+        "vicc",
+        "viccek",
+        "humor",
+        "poén",
+        "vicces"
+    ]
+}

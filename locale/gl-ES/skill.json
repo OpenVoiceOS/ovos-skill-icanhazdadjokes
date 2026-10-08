@@ -1,0 +1,21 @@
+{
+  "name": "Chistes",
+  "description": "Alegra o teu día con humor de pai. Non se garanten as risas, pero é probable que xires os ollos.",
+  "examples": [
+    "Cóntame un chiste.",
+    "Di un chiste.",
+    "Coñeces algún chiste?",
+    "Podes contar chistes?",
+    "Faime rir.",
+    "Cóntame un chiste sobre dentistas.",
+    "Coñeces algún chiste de Chuck Norris?"
+  ],
+  "tags": [
+    "entretemento",
+    "chiste",
+    "chistes",
+    "humor",
+    "humor",
+    "gracioso"
+  ]
+}

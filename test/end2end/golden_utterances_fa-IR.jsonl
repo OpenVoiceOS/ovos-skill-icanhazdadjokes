@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "یک جوک بگو", "lang": "fa-IR", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "جوک بلدی", "lang": "fa-IR", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "یک جوک درباره چاک نوریس بگو", "lang": "fa-IR", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "منو بخندون", "intent_label": "joke.intent", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "جوک درباره برنامه نویس", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
+{"skill_id": "ovos-skill-icanhazdadjokes.openvoiceos", "utterance": "یک جوک در مورد بابایی بگو", "intent_label": "search_joke.intent", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
