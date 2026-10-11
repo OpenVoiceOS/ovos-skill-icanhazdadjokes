@@ -7,3 +7,7 @@ em pots (dir|contar|explicar) (bromes|acudits) (de|sobre) {query}
 pots (dir|contar|explicar)-me (bromes|acudits) (de|sobre) {query}
 saps (cap|algun) acudit (de|sobre) {query}
 saps (cap|alguna) broma (de|sobre) {query}
+alegra'm el dia amb un acudit sobre {query}
+tinc ganes de sentir un acudit de {query}
+fes una broma sobre {query}
+un acudit graciós sobre {query}
