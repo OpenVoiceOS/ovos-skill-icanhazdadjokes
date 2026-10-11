@@ -7,10 +7,11 @@ on:
 
 jobs:
   ovoscope:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/ovoscope.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/ovoscope.yml@harness-d/mr-155-3fe46065
     secrets: inherit
     with:
       python_version: '3.11'
+      gh_automations_ref: 'harness-d/mr-155-3fe46065'
       install_extras: 'test'
       test_path: 'test/end2end/'
       require_padatious: true
