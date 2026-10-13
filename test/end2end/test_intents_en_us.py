@@ -7,7 +7,7 @@ into the skill via one of its two ``.intent`` handlers:
 * ``search_joke.intent`` -> a category-scoped request carrying a ``{query}``
 
 The two grammars overlap on purpose (``tell me a joke`` and ``tell me a chuck
-norris joke`` share the ``(tell|say) me a ... joke`` skeleton), so the padatious
+norris joke`` share the ``(tell|say) me a ... joke`` skeleton), so the intent
 scorer legitimately assigns a bare ``tell me a joke`` to either handler
 depending on slot greediness. Both outcomes still land inside the skill and
 produce a joke, so the assertions accept either intent for the ambiguous
@@ -74,35 +74,29 @@ _CATEGORY_LINES = {
     "general_jokes": GENERAL_LINES,
 }
 
-# The .intent grammars are optional-heavy; padatious handles the optional
-# ``[dad]`` token and open ``{query}`` slot that padacioso cannot.
+# padacioso expands the optional ``[dad]`` token and fills the open
+# ``{query}`` slot from the .intent templates themselves.
 PIPELINE = [
-    "ovos-padatious-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-medium",
+    "ovos-padacioso-pipeline-plugin-high",
+    "ovos-padacioso-pipeline-plugin-medium",
 ]
 
 
 class _IntentRoutingMixin:
-    """Shared MiniCroft setup for padatious intent routing."""
+    """Shared MiniCroft setup for padacioso intent routing."""
 
     @classmethod
     def setUpClass(cls):
-        # the padatious models for this skill's .intent files take a while
-        # to train on CI runners, so allow a generous READY window
         cls.minicroft = get_minicroft([SKILL_ID], max_wait=300)
-        # Real padatious trains its neural model in a background thread
-        # *after* the skill/service report "ready" -- an utterance fired
-        # immediately after boot can race that training and see zero
-        # matches even though the same utterance matches correctly moments
-        # later. Warm the model up here (outside any per-test deadline) so
-        # that lag never leaks into an individual test's assertion.
+        # Route one request before the tests start so a late intent
+        # registration never leaks into an individual test's deadline.
         deadline = time.monotonic() + 60
         warmed = False
         while time.monotonic() < deadline and not warmed:
             warmed = bool(cls._route_raw(cls.minicroft, "tell me a joke"))
             if not warmed:
                 time.sleep(1)
-        assert warmed, "padatious model never finished warming up within 60s"
+        assert warmed, "intent matcher never routed a request within 60s"
 
     @classmethod
     def tearDownClass(cls):
@@ -143,7 +137,7 @@ class _IntentRoutingMixin:
             session = Session(f"e2e-en_us-{hash(utterance)}")
             session.lang = LANG
             session.pipeline = PIPELINE
-            # padatious iterates these directly; they default to None on a
+            # the matcher iterates these directly; they default to None on a
             # freshly built Session, so seed empty lists to keep matching happy
             session.blacklisted_intents = []
             session.blacklisted_skills = []

@@ -45,7 +45,10 @@ class JokingSkill(OVOSSkill):
 
     @intent_handler("search_joke.intent")
     def handle_search_joke(self, message: Message) -> None:
-        category = message.data["query"].lower()
+        category = (message.data.get("query") or "").lower()
+        if not category:
+            self.handle_joke(message)
+            return
         self.log.debug("joke search: %s", category)
 
         # TODO self.voc_match more joke types
