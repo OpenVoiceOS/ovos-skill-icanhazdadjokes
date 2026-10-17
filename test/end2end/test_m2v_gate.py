@@ -6,29 +6,17 @@ model2vec multilingual classifier (``OpenVoiceOS/ovos-m2v-intents-multi-128M-v5`
 of the skill's own golden utterances, the whole round trip: the correct
 intent routed AND real spoken content came out.
 
-``joke.intent`` and a recognized ``search_joke.intent`` category both render
+``joke.intent`` with and without a category both render
 a random line from a locale dialog file, so those cases assert non-empty
 spoken text that is not the raw dialog file name (real effect, not routing
 alone). An unrecognized category falls through to ``no_joke``, whose
 ``{query}`` slot is deterministic, so that case asserts the exact rendered
 text.
-
-FINDING: the model confuses ``search_joke`` for the bare ``joke`` intent on
-every "joke about X" phrasing tried here -- ``joke about chuck norris``
-(0.51, ``ovos-m2v-pipeline-medium``), ``do you know any programmer jokes``
-(0.88, ``-high``), and ``joke about xyzzyfrobnicate`` (0.72, ``-high``) all
-route to ``ovos-skill-icanhazdadjokes.openvoiceos:joke`` instead of
-``:search_joke``, so the category is dropped and a generic dad joke is
-spoken instead of the requested (or "not found") category. Recorded as
-``xfail(strict=True)`` rather than loosened or skipped -- a corpus/model fix
-should flip these back into real gates.
 """
 import os
 import shutil
 import tempfile
 import unittest
-
-import pytest
 
 from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
@@ -123,27 +111,12 @@ class TestM2VJokesGoldenEffect(unittest.TestCase):
     def test_make_me_laugh(self):
         self._assert_random_joke("make me laugh", "dad_jokes")
 
-    @pytest.mark.xfail(
-        reason="model misclassifies as 'joke' (0.51 medium) instead of "
-               "'search_joke'; category dropped, generic dad joke spoken "
-               "instead (see module docstring)",
-        strict=True)
     def test_joke_about_chuck_norris(self):
         self._assert_random_joke("joke about chuck norris", "chuck_norris_jokes")
 
-    @pytest.mark.xfail(
-        reason="model misclassifies as 'joke' (0.88 high) instead of "
-               "'search_joke'; category dropped, generic dad joke spoken "
-               "instead (see module docstring)",
-        strict=True)
     def test_joke_about_programmers(self):
         self._assert_random_joke("do you know any programmer jokes", "dev_jokes")
 
-    @pytest.mark.xfail(
-        reason="model misclassifies as 'joke' (0.72 high) instead of "
-               "'search_joke'; category dropped, generic dad joke spoken "
-               "instead of no_joke (see module docstring)",
-        strict=True)
     def test_joke_about_unknown_category(self):
         # The {query} slot on no_joke is deterministic -- assert the exact text.
         dialog, text, failed = self._run("joke about xyzzyfrobnicate")

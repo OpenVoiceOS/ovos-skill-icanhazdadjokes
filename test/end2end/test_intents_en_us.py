@@ -1,17 +1,10 @@
 """End-to-end intent-routing tests for ovos-skill-icanhazdadjokes (en-US).
 
 Each case feeds an utterance through a MiniCroft stack and asserts it routes
-into the skill via one of its two ``.intent`` handlers:
-
-* ``joke.intent``       -> a generic / dad joke request
-* ``search_joke.intent`` -> a category-scoped request carrying a ``{query}``
-
-The two grammars overlap on purpose (``tell me a joke`` and ``tell me a chuck
-norris joke`` share the ``(tell|say) me a ... joke`` skeleton), so the intent
-scorer legitimately assigns a bare ``tell me a joke`` to either handler
-depending on slot greediness. Both outcomes still land inside the skill and
-produce a joke, so the assertions accept either intent for the ambiguous
-phrasings and pin the unambiguous ones.
+into the skill via ``joke.intent``. That one intent covers a generic / dad
+joke request and a category-scoped request carrying a ``{query}``; the
+handler speaks the category's dialog when the slot is bound and a default
+joke when it is not.
 
 ``TestJokeEffects`` below goes one step further than routing: it asserts the
 handler actually SPEAKS a line drawn from the ``.dialog`` file that its own
@@ -39,7 +32,6 @@ LANG = "en-US"
 LOCALE_EN_US = Path(__file__).parent.parent.parent / "locale" / "en-US"
 
 JOKE = "joke.intent"
-SEARCH = "search_joke.intent"
 
 
 def _dialog_lines(name: str) -> set:
@@ -113,7 +105,7 @@ class _IntentRoutingMixin:
         matched = []
         spoken = []
         handlers = {}
-        for intent_file in (JOKE, SEARCH):
+        for intent_file in (JOKE,):
             base = intent_file[:-len(".intent")]
             handler = lambda msg, name=intent_file: matched.append(name)
             # The dispatched handler message drops the ".intent" filename
@@ -192,13 +184,13 @@ class TestGenericJokeRouting(_IntentRoutingMixin, TestCase):
     """Generic joke requests land in the skill (either joke handler)."""
 
     def test_tell_me_a_joke(self):
-        self._route("tell me a joke", {JOKE, SEARCH})
+        self._route("tell me a joke", {JOKE})
 
     def test_do_you_know_any_jokes(self):
-        self._route("do you know any jokes", {JOKE, SEARCH})
+        self._route("do you know any jokes", {JOKE})
 
     def test_can_you_tell_me_a_joke(self):
-        self._route("can you tell me a joke", {JOKE, SEARCH})
+        self._route("can you tell me a joke", {JOKE})
 
 
 class TestDadJokeRouting(_IntentRoutingMixin, TestCase):
@@ -209,13 +201,13 @@ class TestDadJokeRouting(_IntentRoutingMixin, TestCase):
 
 
 class TestSearchJokeRouting(_IntentRoutingMixin, TestCase):
-    """Category-scoped requests carry a {query} and hit search_joke.intent."""
+    """Category-scoped requests carry a {query} and hit joke.intent."""
 
     def test_tell_me_a_chuck_norris_joke(self):
-        self._route("tell me a chuck norris joke", {SEARCH})
+        self._route("tell me a chuck norris joke", {JOKE})
 
     def test_joke_about_programmers(self):
-        self._route("joke about programmers", {SEARCH})
+        self._route("joke about programmers", {JOKE})
 
 
 class TestDialogSetsAreDisjoint(TestCase):
@@ -256,7 +248,7 @@ class TestJokeEffects(_IntentRoutingMixin, TestCase):
         self.assertIn(text, DAD_LINES, f"spoken line {text!r} is not in dad_jokes.dialog")
 
     def test_chuck_norris_search_speaks_a_chuck_norris_line(self):
-        dialog_key, text = self._route_and_speak("tell me a chuck norris joke", {SEARCH})
+        dialog_key, text = self._route_and_speak("tell me a chuck norris joke", {JOKE})
         self.assertEqual(dialog_key, "chuck_norris_jokes")
         self.assertIn(
             text, CHUCK_NORRIS_LINES,
@@ -264,12 +256,12 @@ class TestJokeEffects(_IntentRoutingMixin, TestCase):
         )
 
     def test_programmer_search_speaks_a_dev_jokes_line(self):
-        dialog_key, text = self._route_and_speak("joke about programmers", {SEARCH})
+        dialog_key, text = self._route_and_speak("joke about programmers", {JOKE})
         self.assertEqual(dialog_key, "dev_jokes")
         self.assertIn(text, DEV_LINES, f"spoken line {text!r} is not in dev_jokes.dialog")
 
     def test_pun_search_speaks_a_general_jokes_line(self):
-        dialog_key, text = self._route_and_speak("joke about pun", {SEARCH})
+        dialog_key, text = self._route_and_speak("joke about pun", {JOKE})
         self.assertEqual(dialog_key, "general_jokes")
         self.assertIn(text, GENERAL_LINES, f"spoken line {text!r} is not in general_jokes.dialog")
 
@@ -281,14 +273,14 @@ class TestJokeEffects(_IntentRoutingMixin, TestCase):
         # the defect the puns/general_jokes fallback in _speak_puns exists
         # to prevent. Assert the spoken line is a real dialog line, not that
         # bare key, from a category the skill actually ships a file for.
-        dialog_key, text = self._route_and_speak("joke about pun", {SEARCH})
+        dialog_key, text = self._route_and_speak("joke about pun", {JOKE})
         self.assertNotEqual(text, "puns", "spoke the unrendered dialog key instead of a joke")
         self.assertIn(text, DAD_LINES | CHUCK_NORRIS_LINES | DEV_LINES | GENERAL_LINES)
 
     def test_unknown_category_speaks_the_no_joke_dialog(self):
         # "xyzzy" matches none of dad/chuck_norris/programmer/pun.voc, so the
         # handler falls back to its error dialog -- the recovery path.
-        dialog_key, text = self._route_and_speak("joke about xyzzy", {SEARCH})
+        dialog_key, text = self._route_and_speak("joke about xyzzy", {JOKE})
         self.assertEqual(dialog_key, "no_joke")
         expected = NO_JOKE_TEMPLATE.format(query="xyzzy")
         self.assertEqual(
