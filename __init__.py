@@ -35,6 +35,13 @@ class JokingSkill(OVOSSkill):
 
     @intent_handler("joke.intent")
     def handle_joke(self, message: Optional[Message] = None) -> None:
+        category = ((message.data.get("query") if message else None) or "").lower()
+        if category:
+            self._handle_category(category)
+        else:
+            self._speak_default_joke()
+
+    def _speak_default_joke(self) -> None:
         # TODO - refactor this once lang support is more uniform
         if self.lang.startswith("pt"):
             self._speak_puns()
@@ -43,12 +50,7 @@ class JokingSkill(OVOSSkill):
         else:
             self.speak_dialog("dad_jokes")
 
-    @intent_handler("search_joke.intent")
-    def handle_search_joke(self, message: Message) -> None:
-        category = (message.data.get("query") or "").lower()
-        if not category:
-            self.handle_joke(message)
-            return
+    def _handle_category(self, category: str) -> None:
         self.log.debug("joke search: %s", category)
 
         # TODO self.voc_match more joke types
