@@ -1,8 +1,8 @@
 # START_VERSION_BLOCK
 VERSION_MAJOR = 0
-VERSION_MINOR = 25
-VERSION_BUILD = 6
-VERSION_ALPHA = 5
+VERSION_MINOR = 26
+VERSION_BUILD = 0
+VERSION_ALPHA = 1
 # END_VERSION_BLOCK
 
 # derived for setuptools dynamic version (do not edit the block above)
