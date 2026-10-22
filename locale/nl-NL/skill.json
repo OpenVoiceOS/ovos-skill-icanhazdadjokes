@@ -1,0 +1,21 @@
+{
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "name": "Grappen",
+    "description": "Maak je dag vrolijker met papa-humor. Lachen is niet gegarandeerd, maar ogen rollen is waarschijnlijk.",
+    "examples": [
+        "Vertel me een grap.",
+        "Zeg een grap.",
+        "Ken je grappen?",
+        "Kun je grappen vertellen?",
+        "Maak me aan het lachen.",
+        "Vertel me een grap over tandartsen.",
+        "Ken je Chuck Norris-grappen?"
+    ],
+    "tags": [
+         "Entertainment",
+        "grap",
+        "grappen",
+        "humor",
+        "leuk"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "name": "Vtipy",
+    "description": "Rozjasni si den tatínkovským humorem. Smích není zaručen, ale koulení očima ano.",
+    "examples": [
+        "Řekni mi vtip.",
+        "Pověz vtip.",
+        "Znáš nějaké vtipy?",
+        "Umíš vyprávět vtipy?",
+        "Rozesměj mě.",
+        "Řekni mi vtip o zubařích.",
+        "Znáš nějaké vtipy o Chucku Norrisovi?"
+    ],
+    "tags": [
+         "Zábava",
+        "vtip",
+        "vtipy",
+        "humor",
+        "sranda",
+        "legrace"
+    ]
+}
