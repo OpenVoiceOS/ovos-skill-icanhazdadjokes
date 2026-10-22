@@ -7,3 +7,12 @@ mám chuť na vtip
 rozvesel mě nějakou legrací
 vyprávěj vtip
 zavtipkuj si
+(řekni|pověz) mi vtip o {query}
+znáš [nějaké] vtipy o {query}
+(řekni|pověz) mi vtip [týkající se] {query}
+umíš vyprávět vtipy o {query}
+vtip o {query}
+mám chuť na vtip o {query}
+rozvesel mě nějakým vtipem na téma {query}
+vyprávěj vtip o {query}
+nějaký dobrý vtip o {query}
