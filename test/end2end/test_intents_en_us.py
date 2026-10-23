@@ -57,6 +57,7 @@ DAD_LINES = _dialog_lines("dad_jokes")
 CHUCK_NORRIS_LINES = _dialog_lines("chuck_norris_jokes")
 DEV_LINES = _dialog_lines("dev_jokes")
 GENERAL_LINES = _dialog_lines("general_jokes")
+PUNS_LINES = _dialog_lines("puns")
 NO_JOKE_TEMPLATE = (LOCALE_EN_US / "no_joke.dialog").read_text(encoding="utf-8").strip()
 
 _CATEGORY_LINES = {
@@ -64,6 +65,7 @@ _CATEGORY_LINES = {
     "chuck_norris_jokes": CHUCK_NORRIS_LINES,
     "dev_jokes": DEV_LINES,
     "general_jokes": GENERAL_LINES,
+    "puns": PUNS_LINES,
 }
 
 # padacioso expands the optional ``[dad]`` token and fills the open
@@ -260,22 +262,20 @@ class TestJokeEffects(_IntentRoutingMixin, TestCase):
         self.assertEqual(dialog_key, "dev_jokes")
         self.assertIn(text, DEV_LINES, f"spoken line {text!r} is not in dev_jokes.dialog")
 
-    def test_pun_search_speaks_a_general_jokes_line(self):
+    def test_pun_search_speaks_a_puns_line(self):
         dialog_key, text = self._route_and_speak("joke about pun", {JOKE})
-        self.assertEqual(dialog_key, "general_jokes")
-        self.assertIn(text, GENERAL_LINES, f"spoken line {text!r} is not in general_jokes.dialog")
+        self.assertEqual(dialog_key, "puns")
+        self.assertIn(text, PUNS_LINES, f"spoken line {text!r} is not in puns.dialog")
 
     def test_pun_search_never_speaks_the_bare_dialog_key(self):
-        # en-US ships no puns.dialog. An unrendered dialog template renders
-        # as its own key (see MustacheDialogRenderer.render's fallback), so
-        # a handler that unconditionally speaks "puns" here would make the
-        # skill say the literal word "puns" instead of a joke -- this is
-        # the defect the puns/general_jokes fallback in _speak_puns exists
-        # to prevent. Assert the spoken line is a real dialog line, not that
-        # bare key, from a category the skill actually ships a file for.
+        # An unrendered dialog template renders as its own key (see
+        # MustacheDialogRenderer.render's fallback), so a missing puns.dialog
+        # would make the skill say the literal word "puns" instead of a joke.
+        # Assert the spoken line is a real dialog line, not that bare key,
+        # from a category the skill actually ships a file for.
         dialog_key, text = self._route_and_speak("joke about pun", {JOKE})
         self.assertNotEqual(text, "puns", "spoke the unrendered dialog key instead of a joke")
-        self.assertIn(text, DAD_LINES | CHUCK_NORRIS_LINES | DEV_LINES | GENERAL_LINES)
+        self.assertIn(text, DAD_LINES | CHUCK_NORRIS_LINES | DEV_LINES | GENERAL_LINES | PUNS_LINES)
 
     def test_unknown_category_speaks_the_no_joke_dialog(self):
         # "xyzzy" matches none of dad/chuck_norris/programmer/pun.voc, so the
