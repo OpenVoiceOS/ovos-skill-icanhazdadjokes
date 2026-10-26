@@ -44,34 +44,6 @@ LOCALE_DIR = END2END_DIR.parents[1] / "locale"
 # than GAP_RATE_SLACK below the stored rate, or when it reaches the gate.
 GAP_RATE_SLACK = 0.10
 GOLDEN_LOCALE_GAPS = {
-    "ca-ES": (0.3, (
-        'm2v matches 30% of the 10 ca-ES rows with the shipped templates '
-        "and names no intent for the rest: 'tens cap acudit bo?'; 'vull "
-        "sentir un acudit de pares'; 'tens acudits de programadors?'; "
-        "'digues alguna cosa divertida'; 'vull un acudit sobre metges'; "
-        '"coneixes acudits d\'animals?"; \'fes-me riure amb un acudit de '
-        "mestres'. The published m2v model predates these templates; remove "
-        'after retrain.')),
-    "cs-CZ": (0.6, (
-        'm2v matches 60% of the 10 cs-CZ rows with the shipped templates '
-        "and names no intent for the rest: 'chci slyšet vtip o tátovi'; "
-        "'potřebuju se zasmát, řekni něco vtipného'; 'pobav mě vtipem o "
-        "doktorech'; 'vyprávěj něco vtipného o učitelích'. The published "
-        'm2v model predates these templates; remove after retrain.')),
-    "da-DK": (0.7, "m2v matches 70% of the da-DK rows with the shipped templates"),
-    "de-DE": (0.7, (
-        'm2v matches 70% of the 10 de-DE rows with the shipped templates '
-        "and names no intent for the rest: 'sag mal was Lustiges'; 'ich "
-        "brauche jetzt einen Witz'; 'sag mir einen Witz über Ärzte'. The "
-        'published m2v model predates these templates; remove after '
-        'retrain.')),
-    "en-US": (0.765, (
-        'm2v matches 76.5% of the 17 en-US rows with the shipped templates '
-        'and names no intent for the rest: "I\'d like a joke about cats"; '
-        "'have you heard any jokes about computers'; 'say something funny "
-        "about math'; 'give me a joke about dentists'. The published m2v "
-        'model predates these templates; remove after retrain.')),
-    "es-CO": (0.6, "m2v matches 60% of the es-CO rows with the shipped templates"),
     "es-ES": (0.5, "m2v matches 50% of the es-ES rows with the shipped templates"),
     "eu-ES": (0.4, (
         'm2v matches 40% of the 10 eu-ES rows with the shipped templates '
@@ -86,7 +58,6 @@ GOLDEN_LOCALE_GAPS = {
         "جوک درباره باباها بشنوم'; 'حوصلم سر رفته، یه جوک بگو'; 'از دکترها "
         "جوک داری؟'; 'میخوام یه جوک درباره معلم ها بشنوم'. The published "
         'm2v model predates these templates; remove after retrain.')),
-    "fr-FR": (0.6, "m2v matches 60% of the fr-FR rows with the shipped templates"),
     "gl-ES": (0.4, (
         'm2v matches 40% of the 10 gl-ES rows with the shipped templates '
         "and names no intent for the rest: 'conta algo gracioso'; 'coñeces "
@@ -95,13 +66,6 @@ GOLDEN_LOCALE_GAPS = {
         "chiste sobre mestres'. The published m2v model predates these "
         'templates; remove after retrain.')),
     "hu-HU": (0.7, "m2v matches 70% of the hu-HU rows with the shipped templates"),
-    "nl-NL": (0.5, (
-        'm2v matches 50% of the 10 nl-NL rows with the shipped templates '
-        "and names no intent for the rest: 'heb je een flauwe papagrap voor "
-        "me'; 'wat is je beste papagrap'; 'vertel iets grappigs over "
-        "katten'; 'weet je een mop over dokters'; 'ik hoor graag een grap "
-        "over leraren'. The published m2v model predates these templates; "
-        'remove after retrain.')),
     "pl-PL": (0.6, "m2v matches 60% of the pl-PL rows with the shipped templates"),
     "pt-BR": (0.6, (
         'm2v matches 60% of the 10 pt-BR rows with the shipped templates '
@@ -109,18 +73,6 @@ GOLDEN_LOCALE_GAPS = {
         "'me conta algo engraçado sobre gatos'; 'sabe alguma piada de "
         "médico'; 'manda uma piada sobre professores'. The published m2v "
         'model predates these templates; remove after retrain.')),
-    "pt-PT": (0.7, (
-        'm2v matches 70% of the 10 pt-PT rows with the shipped templates '
-        "and names no intent for the rest: 'conta-me algo engraçado sobre "
-        "gatos'; 'sabes anedotas de médicos?'; 'quero uma piada sobre "
-        "professores'. The published m2v model predates these templates; "
-        'remove after retrain.')),
-    "ru-RU": (0.6, (
-        'm2v matches 60% of the 10 ru-RU rows with the shipped templates '
-        "and names no intent for the rest: 'пошути как-нибудь'; 'мне нужно "
-        "посмеяться'; 'расскажи что-нибудь смешное про котов'; 'хочу шутку "
-        "про учителей'. The published m2v model predates these templates; "
-        'remove after retrain.')),
     "sv-SE": (0.6, "m2v matches 60% of the sv-SE rows with the shipped templates"),
 }
 # Locales whose negative rows the published m2v model cannot separate from
