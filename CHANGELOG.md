@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.26.0a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.26.0a2) (2026-10-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.26.0a1...0.26.0a2)
+
+**Merged pull requests:**
+
+- test\(golden\): re-pin model-dependent gaps and claims for the 0.56 prototype low tier [\#190](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/190) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.26.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.26.0a1) (2026-10-22)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.25.6a5...0.26.0a1)
@@ -166,15 +174,15 @@
 
 ## [0.20.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.20.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.20.0a1)
-
-## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.18.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.20.0a1)
 
 ## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.19.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.19.0a1)
+
+## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.18.0a1)
 
 **Merged pull requests:**
 
@@ -315,10 +323,6 @@
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.4.0a1...0.4.0a2)
 
-**Merged pull requests:**
-
-- Update dependency pytest to v9 [\#86](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/86) ([renovate[bot]](https://github.com/apps/renovate))
-
 ## [0.4.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.4.0a1) (2026-09-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.12a1...0.4.0a1)
@@ -362,10 +366,6 @@
 ## [0.3.11a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.11a1) (2026-07-03)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.10a3...0.3.11a1)
-
-**Merged pull requests:**
-
-- fix: lowercase .voc base names + widen en-US joke coverage [\#85](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/85) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.3.10a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.10a3) (2026-04-09)
 
