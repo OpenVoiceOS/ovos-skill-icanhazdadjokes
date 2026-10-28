@@ -19,19 +19,19 @@ the suite offline.
 Run: pytest test/end2end/ -v
 """
 import re
-import time
 from pathlib import Path
 from unittest import TestCase
 
 from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
-from ovoscope import get_minicroft
+from ovoscope import CaptureSession
+from ovoscope.routing import PIPELINE, TALLY, get_prototype_minicroft
 
 SKILL_ID = "ovos-skill-icanhazdadjokes.openvoiceos"
 LANG = "en-US"
 LOCALE_EN_US = Path(__file__).parent.parent.parent / "locale" / "en-US"
 
-JOKE = "joke.intent"
+JOKE = f"{SKILL_ID}:joke"
 
 
 def _dialog_lines(name: str) -> set:
@@ -66,116 +66,50 @@ _CATEGORY_LINES = {
     "general_jokes": GENERAL_LINES,
 }
 
-# padacioso expands the optional ``[dad]`` token and fills the open
-# ``{query}`` slot from the .intent templates themselves.
-PIPELINE = [
-    "ovos-padacioso-pipeline-plugin-high",
-    "ovos-padacioso-pipeline-plugin-medium",
-]
-
-
 class _IntentRoutingMixin:
-    """Shared MiniCroft setup for padacioso intent routing."""
+    """Shared MiniCroft setup for intent routing."""
 
     @classmethod
     def setUpClass(cls):
-        cls.minicroft = get_minicroft([SKILL_ID], max_wait=300)
-        # Route one request before the tests start so a late intent
-        # registration never leaks into an individual test's deadline.
-        deadline = time.monotonic() + 60
-        warmed = False
-        while time.monotonic() < deadline and not warmed:
-            warmed = bool(cls._route_raw(cls.minicroft, "tell me a joke"))
-            if not warmed:
-                time.sleep(1)
-        assert warmed, "intent matcher never routed a request within 60s"
+        cls.minicroft = get_prototype_minicroft([SKILL_ID], lang=LANG, max_wait=300)
 
     @classmethod
     def tearDownClass(cls):
         if getattr(cls, "minicroft", None):
             cls.minicroft.stop()
 
-    @staticmethod
-    def _route_raw(minicroft, utterance: str, capture_speech: bool = False):
-        """Emit an utterance and return the raw list of intent basenames
-        (``.intent`` suffix stripped) the skill's handlers were dispatched
-        to. Shared by the warm-up probe, ``_route`` and ``_route_and_speak``
-        below. When ``capture_speech`` is set, also returns the list of
-        spoken ``(dialog_key, utterance_text)`` pairs the skill emitted."""
-        matched = []
-        spoken = []
-        handlers = {}
-        for intent_file in (JOKE,):
-            base = intent_file[:-len(".intent")]
-            handler = lambda msg, name=intent_file: matched.append(name)
-            # The dispatched handler message drops the ".intent" filename
-            # suffix on current OVOS-INTENT-2 naming; register both forms so
-            # this isn't pinned to whichever ovos-workshop version is
-            # installed (see ovos-skill-volume's end2end suite).
-            for msg_type in (f"{SKILL_ID}:{intent_file}", f"{SKILL_ID}:{base}"):
-                handlers[msg_type] = handler
-                minicroft.bus.on(msg_type, handler)
-        if capture_speech:
-            def _on_speak(msg):
-                if msg.context.get("skill_id") == SKILL_ID:
-                    spoken.append((
-                        msg.data.get("meta", {}).get("dialog"),
-                        msg.data.get("utterance"),
-                    ))
-            for msg_type in ("speak", "ovos.utterance.speak"):
-                handlers[msg_type] = _on_speak
-                minicroft.bus.on(msg_type, _on_speak)
-        try:
-            session = Session(f"e2e-en_us-{hash(utterance)}")
-            session.lang = LANG
-            session.pipeline = PIPELINE
-            # the matcher iterates these directly; they default to None on a
-            # freshly built Session, so seed empty lists to keep matching happy
-            session.blacklisted_intents = []
-            session.blacklisted_skills = []
-            minicroft.bus.emit(Message(
-                "recognizer_loop:utterance",
-                {"utterances": [utterance], "lang": LANG},
-                {"session": session.serialize()},
-            ))
-            deadline = time.monotonic() + 15
-            while not matched and time.monotonic() < deadline:
-                time.sleep(0.2)
-            if capture_speech:
-                # give the handler body (which runs after intent binding)
-                # a little more room to actually call speak_dialog
-                speak_deadline = time.monotonic() + 5
-                while not spoken and time.monotonic() < speak_deadline:
-                    time.sleep(0.2)
-        finally:
-            for msg_type, handler in handlers.items():
-                minicroft.bus.remove(msg_type, handler)
-        if capture_speech:
-            return matched, spoken
-        return matched
+    def _route_raw(self, utterance: str):
+        """Emit an utterance and return the bus message types it fired and
+        the ``(dialog_key, utterance_text)`` pairs the skill spoke."""
+        session = Session(f"e2e-en_us-{hash(utterance)}")
+        session.lang = LANG
+        session.pipeline = PIPELINE
+        session.blacklisted_intents = []
+        session.blacklisted_skills = []
+        capture = CaptureSession(self.minicroft,
+                                 eof_msgs=["ovos.utterance.handled"])
+        capture.capture(Message(
+            "recognizer_loop:utterance",
+            {"utterances": [utterance], "lang": LANG},
+            {"session": session.serialize()},
+        ), timeout=30)
+        messages = capture.finish()
+        spoken = [(m.data.get("meta", {}).get("dialog"), m.data.get("utterance"))
+                  for m in messages
+                  if m.msg_type in ("speak", "ovos.utterance.speak")
+                  and m.context.get("skill_id") == SKILL_ID]
+        return [m.msg_type for m in messages], spoken
 
-    def _route(self, utterance: str, allowed):
-        """Emit an utterance and return the skill intent it routed to."""
-        matched = self._route_raw(self.minicroft, utterance)
-        self.assertTrue(
-            matched,
-            f"{utterance!r} did not route to the skill",
-        )
-        self.assertIn(
-            matched[0], allowed,
-            f"{utterance!r} routed to {matched[0]}, expected one of {allowed}",
-        )
-        return matched[0]
+    def _route(self, utterance: str, intent: str):
+        """Emit an utterance and check it routed to ``intent``."""
+        types, _ = self._route_raw(utterance)
+        TALLY.assert_routed(utterance, intent, types)
 
-    def _route_and_speak(self, utterance: str, allowed):
-        """Emit an utterance, assert it routes into ``allowed``, and return
-        the ``(dialog_key, spoken_text)`` the handler actually spoke."""
-        matched, spoken = self._route_raw(self.minicroft, utterance, capture_speech=True)
-        self.assertTrue(matched, f"{utterance!r} did not route to the skill")
-        self.assertIn(
-            matched[0], allowed,
-            f"{utterance!r} routed to {matched[0]}, expected one of {allowed}",
-        )
+    def _route_and_speak(self, utterance: str, intent: str):
+        """Emit an utterance, check it routed to ``intent``, and return the
+        ``(dialog_key, spoken_text)`` the handler actually spoke."""
+        types, spoken = self._route_raw(utterance)
+        TALLY.assert_routed(utterance, intent, types)
         self.assertTrue(spoken, f"{utterance!r} routed but the skill never spoke")
         return spoken[0]
 
@@ -184,30 +118,30 @@ class TestGenericJokeRouting(_IntentRoutingMixin, TestCase):
     """Generic joke requests land in the skill (either joke handler)."""
 
     def test_tell_me_a_joke(self):
-        self._route("tell me a joke", {JOKE})
+        self._route("tell me a joke", JOKE)
 
     def test_do_you_know_any_jokes(self):
-        self._route("do you know any jokes", {JOKE})
+        self._route("do you know any jokes", JOKE)
 
     def test_can_you_tell_me_a_joke(self):
-        self._route("can you tell me a joke", {JOKE})
+        self._route("can you tell me a joke", JOKE)
 
 
 class TestDadJokeRouting(_IntentRoutingMixin, TestCase):
     """The explicit ``[dad]`` phrasing pins joke.intent."""
 
     def test_tell_me_a_dad_joke(self):
-        self._route("tell me a dad joke", {JOKE})
+        self._route("tell me a dad joke", JOKE)
 
 
 class TestSearchJokeRouting(_IntentRoutingMixin, TestCase):
     """Category-scoped requests carry a {query} and hit joke.intent."""
 
     def test_tell_me_a_chuck_norris_joke(self):
-        self._route("tell me a chuck norris joke", {JOKE})
+        self._route("tell me a chuck norris joke", JOKE)
 
     def test_joke_about_programmers(self):
-        self._route("joke about programmers", {JOKE})
+        self._route("joke about programmers", JOKE)
 
 
 class TestDialogSetsAreDisjoint(TestCase):
@@ -243,12 +177,12 @@ class TestJokeEffects(_IntentRoutingMixin, TestCase):
     """
 
     def test_dad_joke_speaks_a_dad_jokes_line(self):
-        dialog_key, text = self._route_and_speak("tell me a dad joke", {JOKE})
+        dialog_key, text = self._route_and_speak("tell me a dad joke", JOKE)
         self.assertEqual(dialog_key, "dad_jokes")
         self.assertIn(text, DAD_LINES, f"spoken line {text!r} is not in dad_jokes.dialog")
 
     def test_chuck_norris_search_speaks_a_chuck_norris_line(self):
-        dialog_key, text = self._route_and_speak("tell me a chuck norris joke", {JOKE})
+        dialog_key, text = self._route_and_speak("tell me a chuck norris joke", JOKE)
         self.assertEqual(dialog_key, "chuck_norris_jokes")
         self.assertIn(
             text, CHUCK_NORRIS_LINES,
@@ -256,12 +190,12 @@ class TestJokeEffects(_IntentRoutingMixin, TestCase):
         )
 
     def test_programmer_search_speaks_a_dev_jokes_line(self):
-        dialog_key, text = self._route_and_speak("joke about programmers", {JOKE})
+        dialog_key, text = self._route_and_speak("joke about programmers", JOKE)
         self.assertEqual(dialog_key, "dev_jokes")
         self.assertIn(text, DEV_LINES, f"spoken line {text!r} is not in dev_jokes.dialog")
 
     def test_pun_search_speaks_a_general_jokes_line(self):
-        dialog_key, text = self._route_and_speak("joke about pun", {JOKE})
+        dialog_key, text = self._route_and_speak("joke about pun", JOKE)
         self.assertEqual(dialog_key, "general_jokes")
         self.assertIn(text, GENERAL_LINES, f"spoken line {text!r} is not in general_jokes.dialog")
 
@@ -273,14 +207,14 @@ class TestJokeEffects(_IntentRoutingMixin, TestCase):
         # the defect the puns/general_jokes fallback in _speak_puns exists
         # to prevent. Assert the spoken line is a real dialog line, not that
         # bare key, from a category the skill actually ships a file for.
-        dialog_key, text = self._route_and_speak("joke about pun", {JOKE})
+        dialog_key, text = self._route_and_speak("joke about pun", JOKE)
         self.assertNotEqual(text, "puns", "spoke the unrendered dialog key instead of a joke")
         self.assertIn(text, DAD_LINES | CHUCK_NORRIS_LINES | DEV_LINES | GENERAL_LINES)
 
     def test_unknown_category_speaks_the_no_joke_dialog(self):
         # "xyzzy" matches none of dad/chuck_norris/programmer/pun.voc, so the
         # handler falls back to its error dialog -- the recovery path.
-        dialog_key, text = self._route_and_speak("joke about xyzzy", {JOKE})
+        dialog_key, text = self._route_and_speak("joke about xyzzy", JOKE)
         self.assertEqual(dialog_key, "no_joke")
         expected = NO_JOKE_TEMPLATE.format(query="xyzzy")
         self.assertEqual(
