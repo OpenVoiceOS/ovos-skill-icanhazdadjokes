@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.26.0a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.26.0a3) (2026-10-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.26.0a2...0.26.0a3)
+
+**Merged pull requests:**
+
+- test: run the end2end suite on the m2v prototype pipeline [\#189](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/189) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.26.0a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.26.0a2) (2026-10-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.26.0a1...0.26.0a2)
@@ -358,10 +366,6 @@
 ## [0.3.11a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.11a2) (2026-07-12)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.11a1...0.3.11a2)
-
-**Merged pull requests:**
-
-- fix: allow ovos-workshop 9.x [\#88](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/88) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.3.11a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.11a1) (2026-07-03)
 
