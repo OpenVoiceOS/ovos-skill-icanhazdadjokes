@@ -17,7 +17,25 @@ from ovos_workshop.decorators import intent_handler
 from ovos_workshop.skills import OVOSSkill
 
 
+# Joke collections that a locale ships as its own `<name>_jokes.dialog`. A
+# locale reaches one by voice when it ships both `<name>.voc`, to name the
+# category, and `<name>_jokes.dialog`, to hold the jokes.
+LOCAL_CATEGORIES = ("beauf", "blondes", "dark", "edgy")
+
+
 class JokingSkill(OVOSSkill):
+
+    def _speak_local_category(self, name: str) -> bool:
+        """Speak a line of ``<name>_jokes.dialog``, or return False when this
+        locale ships no such dialog.
+
+        A locale that names the category in a ``.voc`` file but ships no
+        dialog would otherwise speak the bare dialog key aloud; every locale
+        but fr-FR names ``dark`` and ships no ``dark_jokes.dialog``."""
+        if f"{name}_jokes" not in self.dialog_renderer.templates:
+            return False
+        self.speak_dialog(f"{name}_jokes")
+        return True
 
     def _speak_puns(self) -> None:
         """Speak from ``puns.dialog`` when this locale ships one, else fall
@@ -64,4 +82,9 @@ class JokingSkill(OVOSSkill):
         elif self.voc_match(voc_filename="pun", utt=category, lang=self.lang):
             self._speak_puns()
         else:
+            for name in LOCAL_CATEGORIES:
+                if self.voc_match(voc_filename=name, utt=category, lang=self.lang):
+                    if self._speak_local_category(name):
+                        return
+                    break
             self.speak_dialog("no_joke", {"query": category})
