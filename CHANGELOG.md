@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.27.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.27.0a1) (2026-10-29)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.26.0a3...0.27.0a1)
+
+**Merged pull requests:**
+
+- feat: serve the local joke collections by voice [\#193](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/193) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.26.0a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.26.0a3) (2026-10-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.26.0a2...0.26.0a3)
@@ -182,15 +190,15 @@
 
 ## [0.20.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.20.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.20.0a1)
-
-## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.19.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.18.0a1...0.20.0a1)
 
 ## [0.18.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.18.0a1) (2026-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.18.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.19.0a1...0.18.0a1)
+
+## [0.19.0a1](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.19.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.17.0a1...0.19.0a1)
 
 **Merged pull requests:**
 
@@ -358,10 +366,6 @@
 ## [0.3.11a3](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.11a3) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/compare/0.3.11a2...0.3.11a3)
-
-**Merged pull requests:**
-
-- docs: rewrite README in Simplified Technical English [\#90](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/pull/90) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.3.11a2](https://github.com/OpenVoiceOS/ovos-skill-icanhazdadjokes/tree/0.3.11a2) (2026-07-12)
 
