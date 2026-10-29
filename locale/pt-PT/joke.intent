@@ -1,0 +1,29 @@
+(conta|diz|conta-me|diz-me) uma (piada|anedota)
+faz-me rir
+sabes alguma (piada|anedota)
+sabes contar (piadas|anedotas)
+apetece-me ouvir uma anedota
+anima-me com uma piada
+conta uma anedota engraçada
+alegra-me o dia com uma piada
+diz algo divertido
+põe-me bem disposto
+faz-me sorrir
+tens uma piada para mim
+quero rir-me um pouco
+conta-me uma coisa com piada
+diz qualquer coisa com graça
+quero dar uma gargalhada
+conta-me uma anedota
+conta uma boa anedota
+diz qualquer coisa que me faça rir
+(conta|conta-me|diz-me) uma (piada|anedota) sobre {query}
+(piada|anedota) sobre {query}
+sabes alguma (piada|anedota) sobre {query}
+apetece-me ouvir uma anedota sobre {query}
+anima-me com uma piada sobre {query}
+uma anedota engraçada sobre {query}
+sabes uma piada boa sobre {query}
+quero uma piada que fale de {query}
+alguma anedota relacionada com {query}
+conta-me algo engraçado acerca de {query}
